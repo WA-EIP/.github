@@ -1,6 +1,7 @@
 ## Hello there 👋
 
 🙋‍♀️ This is the GitHub organization for the Washington Emerging Infections Program.
+
 🌈 Please review the contributing guides for details on how to contribute to a project.
 
 <!--
