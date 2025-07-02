@@ -29,6 +29,29 @@ We welcome contributions! You can contribute in many ways:
 
 1. **Get approval** from an org maintainer or core team (if required).
 2. **Create the repository** using the org’s [starter template](https://github.com/your-org/repo-template) (or clone an existing one).
+
+ > **Repository Naming Convention:**  
+   > When creating a new repository within this org, please follow this naming convention to ensure clarity, consistency, and ease of navigation:  
+   >  
+   > `<organization>-<team>-<project>-<sub-project>-<optional:platform>`  
+   >  
+   > | Segment                  | Description                                                                  |  
+   > |--------------------------|------------------------------------------------------------------------------|  
+   > | `<organization>`         | The organization or partner name (e.g., `wadoh`, `phskc`)                |  
+   > | `<team>`                 | Team or department responsible (e.g., `diqa`, `rhino`, `phskc`, etc.)                   |  
+   > | `<project>`              | Main project or domain (e.g., `respnet`, `mpox`)                     |  
+   > | `<sub-project>`          | Specific component or module (e.g., `reporting`, `etl`)                      |  
+   > | `<platform>` _(optional)_| Platform or environment used (e.g., `dbx`)                     |  
+
+   > **Examples:**  
+   > - `wadoh-diqa-respnet-reporting-dbx` (Washington DOH DIQA team working on RESP-NET reporting pipeline in Databricks)  
+   > - `wadoh-rhino-respnet-casefinding` (Washington DOH RHINO team working on RESP-NET case finding scripts)  
+   > - `phskc-team-respnet-caseascertainment` (Public Health Seattle King County team working on RESP-NET case ascertainment scripts)  
+
+
+
+
+
 3. **Add the following required files:**
    - `README.md`
 4. **Set repository settings:**
