@@ -1,2 +1,2 @@
 # .github
-WA-EIP issue templates, contributing guidelines, code of conduct, and README
+WA-EIP issue templates, contributing guidelines, code of conduct, and README.
