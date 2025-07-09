@@ -5,7 +5,7 @@
 <br>
 <br>
 
-### This is the GitHub organization for the Washington Emerging Infections Program.
+### This is the GitHub organization for the Washington State Emerging Infections Program.
 
 #### Please review our [Code of Conduct](CODE_OF_CONDUCT.md), [Contributing Guides](), and [Security Policy](SECURITY.md) for details on how to contribute to a project.
 
