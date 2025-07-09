@@ -5,14 +5,14 @@
 <br>
 <br>
 
-🙋‍♀️ This is the GitHub organization for the Washington Emerging Infections Program.
+### This is the GitHub organization for the Washington Emerging Infections Program.
 
-🌈 Please review the contributing guides for details on how to contribute to a project.
+#### Please review our [Code of Conduct](CODE_OF_CONDUCT.md), [Contributing Guides](), and [Security Policy](SECURITY.md) for details on how to contribute to a project.
+
 
 <!--
 
-**Here are some ideas to get you started:**
-
+👩‍💻 Check out our website! https://nwpage.org/
 
 👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
 🍿 Fun facts - what does your team eat for breakfast?
