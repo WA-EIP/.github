@@ -1,5 +1,10 @@
 ## Hello there 👋
 
+![DOH_Emerging Infections lockup_horizontal](https://github.com/user-attachments/assets/6c8e3b33-254b-485f-8050-fc00cd9ed11a)
+
+<br>
+<br>
+
 🙋‍♀️ This is the GitHub organization for the Washington Emerging Infections Program.
 
 🌈 Please review the contributing guides for details on how to contribute to a project.
