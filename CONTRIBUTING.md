@@ -82,9 +82,10 @@ To contribute to an existing project within the organization:
 Before publishing or contributing to a repository:
 
 - [ ] Repository includes standard files (`README`, `LICENSE`, etc.)
-- [ ] Code follows defined style
+- [ ] Code follows security protocols and is sanitized of sensitive information
 - [ ] Documentation is updated
 - [ ] Contributions follow the org’s Code of Conduct
+- [ ] **Optional**: Code/commits follow style guidelines 
 
 
 
