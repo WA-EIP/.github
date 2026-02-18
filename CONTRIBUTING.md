@@ -82,11 +82,11 @@ To contribute to an existing project within the organization:
 
 Before publishing or contributing to a repository:
 
-- [ ] Repository includes standard files (`README`, `LICENSE`, etc.)
-- [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information
-- [ ] Documentation is updated
 - [ ] Contributions follow the org’s [Code of Conduct](CODE_OF_CONDUCT.md).
-- [ ] **Optional**: Code/commits follow [Commit Guidelines](CODE_OF_CONDUCT.md).
+- [ ] Repository includes standard files (`README`, `LICENSE`, etc.).
+- [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information.
+- [ ] Documentation is updated.
+   - [ ] **Optional**: Code/commits follow [Commit Guidelines](CODE_OF_CONDUCT.md).
 
 
 
