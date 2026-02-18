@@ -7,7 +7,7 @@
 
 ### This is the GitHub organization for the Washington State Emerging Infections Program.
 
-#### Please review our [Code of Conduct](https://github.com/WA-EIP/.github/blob/main/CODE_OF_CONDUCT.md), [Contributing Guide](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md), and [Security Policy](SECURITY.md) for details on how to contribute to a project. We have also created [Commit Guidelines](https://github.com/WA-EIP/.github/blob/main/COMMIT.md) and a [Style Guide](https://github.com/WA-EIP/.github/blob/main/STYLE.md) with suggested conventions for commit messages and code style to help keep our work consistent and easy to review.
+#### Please review our [Code of Conduct](https://github.com/WA-EIP/.github/blob/main/CODE_OF_CONDUCT.md), [Contributing Guide](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md), and [Security Policy](SECURITY.md) for details on how to contribute to a project. We have also created [Commit Guidelines](https://github.com/WA-EIP/.github/blob/main/COMMIT.md) and a [Style Guide](https://github.com/WA-EIP/.github/blob/main/STYLE.md) with suggested conventions for commit messages, branching, and code style to help keep our work consistent and easy to review.
 
 
 <!--
