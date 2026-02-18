@@ -45,7 +45,22 @@ We use layered controls to reduce the risk of accidentally exposing sensitive in
 
 ### `.gitignore`
 
-`.gitignore` helps prevent accidental commits of local files that may contain sensitive information.
+`.gitignore` helps prevent accidental commits of local files that may contain sensitive information. It is bad practice and a security risk to add private credentials to a script. If your script contains things like passwords, server names, or network drives, be aware that that information may be publicly visible when you push it to a remote git/github repo. Many of our scripts must call passwords and server names in order for them to work properly, so we need a way to hide that information from the public but still be able to run the scripts locally. `.gitignore` can help achieve this.
+
+**Example `.gitignore` patterns**
+```
+# Excel files  
+*.xlsx  
+*.xls  
+
+# Logs  
+*.log  
+
+# Text files  
+*.txt  
+```
+
+The example `.gitignore` file above contains all files with an excel, log, or txt extension. This means that any file with those extensions that you create in your local clone of the repo will exist for you, but those filetypes cannot and will not ever be pushed into the repo from your local clone.
 
 Contributor expectations:
 * Never hardcode credentials in scripts
@@ -55,7 +70,7 @@ Contributor expectations:
 
 ### GitHub push protections
 
-We have enabled GitHub Secret Scanning and Push Protection for every repository where the feature is available.
+We have enabled GitHub Secret Scanning and Push Protection for every repository in the WA-EIP GitHub org.
 
 What this does:
 * Secret scanning helps detect secrets that were committed
@@ -68,7 +83,7 @@ Contributor expectations:
 
 ### Secret hooks
 
-In addition to GitHub’s push protection, we use pre-commit secret hooks as a local guardrail to reduce the chance of committing sensitive information in the first place.
+In addition to GitHub’s push protection, we use pre-commit secret hooks as a local guardrail to reduce the chance of committing sensitive information in the first place. For example, if someone accidentally pushes a server name to the public repo, the hook will prevent that code from ever getting into the remote repo and will give the user a local error.
 
 What secret hooks are for:
 * They run locally during git actions (for example, at commit time)
@@ -76,7 +91,7 @@ What secret hooks are for:
 * It allows us to define custom secrets and sensitive patterns for our needs
 
 How to install:
-* Follow the installation and update instructions [here](https://github.com/DOH-EPI-Coders/secret-hooks)
+* Follow the installation and update instructions [here](https://github.com/WA-EIP/hooks) to install pre-commit hooks for all of your repos.
 * Contact maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov) for additional support
 
 ## If you accidentally commit or push sensitive information
