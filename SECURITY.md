@@ -61,7 +61,7 @@ What this does:
 * Secret scanning helps detect secrets that were committed
 * Push protection scans code pushes and blocks pushes containing supported secret types, and it can generate an alert when a contributor bypasses the block
 
-Contributor expectations"
+Contributor expectations:
 * If your push is blocked, assume a real exposure risk until proven otherwise
 * Remove the secret from the change, rotate or revoke it if it was real, then push again
 * If you are unsure whether the flagged content is a secret, pause and contact the maintainers before bypassing the block
