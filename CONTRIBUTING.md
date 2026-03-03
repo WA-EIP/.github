@@ -50,16 +50,15 @@ We welcome contributions! You can contribute in many ways:
    > - `phskc-team-respnet-caseascertainment` (Public Health Seattle King County team working on RESP-NET case ascertainment scripts)  
 
 
-
-
-
-3. **Add the following required files:**
+3. **Set up pre-commit secrets hook**
+   - Review our [security policy]([url](https://github.com/WA-EIP/.github/blob/main/SECURITY.md)) to correctly set up `.gitignore` and install a pre-commit hook for increased security
+4. **Add the following required files:**
    - `README.md`
-4. **Set repository settings:**
+5. **Set repository settings:**
    - Default branch to `main`
    - Enable branch protection rules (if needed)
    - Add teams or collaborators
-5. **Share your new repo** in the org’s communication channel so others can follow or contribute.
+6. **Share your new repo** in the org’s communication channel so others can follow or contribute.
 
 ---
 
