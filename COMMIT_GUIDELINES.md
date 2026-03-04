@@ -3,14 +3,18 @@
 ## Overview
 This section will outline our Release Cycle Process and detail commit guidelines.
 
+---
 
-# Release Cycle Process
-
-## Overview
-
+## Release Cycle Process
 This repository uses an automated release workflow that manages versioning and releases through GitHub Actions. The process follows a structured branching strategy and automated releases through pull requests.
+Please use the [template name] template when creating your new repository [link Frank's link https://nw-page.github.io/standards/gh/release.html]
+[insert template picture here when "Create a new repository"] OR [instructions for how to create release cycle process]
+
+---
 
 ## Branch Strategy
+The table below lists naming conventions you may use for your branches based off your main branch. Utilizing a branch strategy can help identify what work is being done in the branch.
+
 | Branch         | Purpose                                      |
 |----------------|----------------------------------------------|
 | `main`         | Production-ready code                        |
@@ -21,9 +25,11 @@ This repository uses an automated release workflow that manages versioning and r
 | `refactor/*`   | Code refactoring                             |
 | `chore/*`      | Maintenance tasks                            |
 
+---
+
 ## Commit Guidelines
 
-All commits must follow the conventional commits format:
+All commits must follow the conventional commits format listed below. Conventional commit formatting allows the automated release workflow to update the Release Cycle. 
 
 - ✅ `feat:` - Use when adding a new feature.
 - 🐞 `fix:` - Use when fixing a bug.
