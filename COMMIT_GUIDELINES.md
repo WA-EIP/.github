@@ -6,10 +6,14 @@ This section will outline our Release Cycle Process and detail commit guidelines
 ---
 
 ## Release Cycle Process
-This repository uses an automated release workflow that manages versioning and releases through GitHub Actions. The process follows a structured branching strategy and automated releases through pull requests.
-Please use the [template name] template when creating your new repository [link Frank's link https://nw-page.github.io/standards/gh/release.html]
+This repository uses an automated release workflow that manages versioning and releases through GitHub Actions. The process follows a structured branching strategy and automated releases through pull requests. If you would like to read more information about release cycles, please [click here].
+
+To initiate releases on the repo you created, please select the [NAME] workflow by following the steps below. 
+
+
 [insert template picture here when "Create a new repository"] OR [instructions for how to create release cycle process]
 
+[click here]: https://nw-page.github.io/standards/gh/release.html
 ---
 
 ## Branch Strategy
