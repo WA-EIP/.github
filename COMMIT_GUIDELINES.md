@@ -47,6 +47,7 @@ All commits must follow the conventional commits format listed below. Convention
 - 🔁 `ci:` - CI configuration changes (GitHub actions, etc.)
 - ⏪ `revert:` - Reverting/undoing commits or previous changes
 
+
 Example:
 ```bash
 git commit -m "feat: add data validation"
