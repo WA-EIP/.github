@@ -244,7 +244,7 @@ Follow semantic versioning (MAJOR.MINOR.PATCH):
 
 ---
 
-###⚡ Important Notes
+###⚡Important Notes
 
 - All changes must go through pull requests
 - Pull request titles must follow conventional commit format
