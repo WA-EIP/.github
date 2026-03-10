@@ -168,7 +168,7 @@ git commit -m "chore: update dependencies"
 ### ✏️ Step-by-Step Process
 <details>
 <summary>
-#### 1. Start New Feature Development
+1. Start New Feature Development
 </summary> <br />
 ```bash
 # Create new feature branch from main
