@@ -27,7 +27,7 @@ Thank you for your interest in contributing! We're excited to work with you to i
 
 ---
 
-## 🚀 [How to Contribute]
+## 🚀 [How to Contribute][toc]
 
 We welcome contributions! You can contribute in many ways:
 
