@@ -264,7 +264,8 @@ Before publishing or contributing to a repository:
 - [ ] Repository includes standard files (`README`, `LICENSE`, etc.).
 - [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information.
 - [ ] Documentation is updated.
-   - [ ] **Optional**: Code/commits follow [Commit Guidelines](CODE_OF_CONDUCT.md).
+   - [ ] Configure Version Cycle in Actions for your repo. 
+   - [ ] **Optional**: Code/commits follow [Commit Guidelines](#-commit-guidelines).
 
 
 [↑ Back to Top](#-table-of-contents)
