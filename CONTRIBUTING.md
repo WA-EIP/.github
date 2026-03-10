@@ -168,7 +168,7 @@ git commit -m "chore: update dependencies"
 ### ✏️ Step-by-Step Process
 <details>
 <summary>
-1. Start New Feature Development
+**1. Start New Feature Development**
 </summary> <br />
 
 ```bash
@@ -204,6 +204,7 @@ git push origin release/0.1.0
 <summary>
 3. Create Feature Pull Request
 </summary> <br />
+
 1. Go to GitHub repository
 2. Click "Pull requests"
 3. Click "New pull request"
