@@ -15,15 +15,15 @@ Thank you for your interest in contributing! We're excited to work with you to i
 ---
 
 ## 📋 Outline
-1. [🚀 How to Contribute](#how-to-contribute)
-    - [🧱 Creating a New Repository](#creating-a-new-repository)
+1. [:rocket: How to Contribute](#how-to-contribute)
+    - [:bricks: Creating a New Repository](#creating-a-new-repository)
     - [Contributing to Existing Repositories](#contributing-to-existing-repositories)
 2. [Documentation](#documentation)
     - [Release Cycle Process](#release-cycle-process)
     - [Branch Strategy](#branch-strategy)
     - [Commit Guidelines](#commit-guidelines)
     - [Step-by-Step Process](#step-by-step-process)
-3. [Best Practices Checklist](#best-practices-checklist)
+3. [:white_check_mark: Best Practices Checklist](#best-practices-checklist)
 
 ---
 
