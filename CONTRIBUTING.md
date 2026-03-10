@@ -18,11 +18,13 @@ Thank you for your interest in contributing! We're excited to work with you to i
 - [How to Contribute](#-how-to-contribute)
     - [Creating a New Repository](#-creating-a-new-repository)
     - [Contributing to Existing Repositories](#-contributing-to-existing-repositories)
-- [Documentation](#documentation)
-    - [Release Cycle Process](#release-cycle-process)
-    - [Branch Strategy](#branch-strategy)
-    - [Commit Guidelines](#commit-guidelines)
-    - [Step-by-Step Process](#step-by-step-process)
+- [Versioning Standards](#-versioning-standards)
+    - [Release Cycle Process](#-release-cycle-process)
+    - [Branch Strategy](#-branch-strategy)
+    - [Commit Guidelines](#-commit-guidelines)
+    - [Step-by-Step Process](#-step-by-step-process)
+    - [Version Numbering](#-version-numbering)
+    - [Important Notes](#-important-notes)
 - [Best Practices Checklist](#-best-practices-checklist)
 
 ---
@@ -36,6 +38,8 @@ We welcome contributions! You can contribute in many ways:
 - By fixing typos in documentation
 - By submitting Pull Request (PR) to fix opened issues
 - By submitting Pull Request (PR) to suggest new features (it is considered good practice to open an issue for discussion before working on a pull request for a new feature).
+
+[↑ Back to Top](#-table-of-contents)
 
 ---
 
@@ -73,6 +77,8 @@ We welcome contributions! You can contribute in many ways:
    - Add teams or collaborators
 6. **Share your new repo** in the org’s communication channel so others can follow or contribute.
 
+[↑ Back to Top](#-table-of-contents)
+
 ---
 
 ### 🛠 Contributing to Existing Repositories
@@ -88,15 +94,19 @@ To contribute to an existing project within the organization:
 
 > Each repo may have its own workflow or requirements. Check the README or open an issue if you’re unsure.
 
----
-
-## Documentation
-
-This section will outline our Release Cycle Process and detail commit guidelines.
+[↑ Back to Top](#-table-of-contents)
 
 ---
 
-### Release Cycle Process
+## ⚖️ Versioning Standards
+
+This section will outline standards for documenting your repository to enhance collaboration, provide clarity and ease adaptation across teams. The [Release Cycle Process](#-release-cycle-process), [Branch Strategy](#-branch-strategy), and [Commit Guidelines](#-commit-guidelines) are important ways to organize and manage contents in your repo.
+
+[↑ Back to Top](#-table-of-contents)
+
+---
+
+### 🔁 Release Cycle Process
 This repository uses an automated release workflow that manages versioning and releases through GitHub Actions. The process follows a structured branching strategy and automated releases through pull requests. If you would like to read more information about release cycles, please [click here].
 
 To initiate releases on the repo you created, please select the [NAME] workflow by following the steps below. 
@@ -105,9 +115,12 @@ To initiate releases on the repo you created, please select the [NAME] workflow 
 [insert template picture here when "Create a new repository"] OR [instructions for how to create release cycle process]
 
 [click here]: https://nw-page.github.io/standards/gh/release.html
+
+[↑ Back to Top](#-table-of-contents)
+
 ---
 
-### Branch Strategy
+### 🌳 Branch Strategy
 The table below lists naming conventions you may use for your branches based off your main branch. Utilizing a branch strategy can help identify what work is being done in the branch.
 
 | Branch         | Purpose                                      |
@@ -120,9 +133,11 @@ The table below lists naming conventions you may use for your branches based off
 | `refactor/*`   | Code refactoring                             |
 | `chore/*`      | Maintenance tasks                            |
 
+[↑ Back to Top](#-table-of-contents)
+
 ---
 
-### Commit Guidelines
+### 🔒 Commit Guidelines
 
 All commits must follow the conventional commits format listed below. Conventional commit formatting allows the automated release workflow to update the Release Cycle. 
 
@@ -146,7 +161,11 @@ git commit -m "fix: correct calculation bug"
 git commit -m "chore: update dependencies"
 ```
 
-### Step-by-Step Process
+[↑ Back to Top](#-table-of-contents)
+
+---
+
+### ✏️ Step-by-Step Process
 
 #### 1. Start New Feature Development
 
@@ -209,15 +228,23 @@ When release pull request is approved and merged to main, the workflow automatic
   - Creates a version tag (e.g., v0.1.0)
   - Generates GitHub Release with release notes
   - Closes the release cycle
-    
-### Version Numbering
+
+[↑ Back to Top](#-table-of-contents)
+
+---
+
+### 🔢 Version Numbering
 
 Follow semantic versioning (MAJOR.MINOR.PATCH):
   - MAJOR (1.0.0) - Breaking changes
   - MINOR (0.1.0) - New features (backwards compatible)
   - PATCH (0.0.1) - Bug fixes
+  
+[↑ Back to Top](#-table-of-contents)
 
-### Important Notes
+---
+
+###⚡ Important Notes
 
 - All changes must go through pull requests
 - Pull request titles must follow conventional commit format
@@ -225,6 +252,9 @@ Follow semantic versioning (MAJOR.MINOR.PATCH):
 - Tests must pass before merges are allowed
 - Each release should have clear documentation of changes
 
+[↑ Back to Top](#-table-of-contents)
+
+---
 
 ## ✅ Best Practices Checklist
 
@@ -237,4 +267,4 @@ Before publishing or contributing to a repository:
    - [ ] **Optional**: Code/commits follow [Commit Guidelines](CODE_OF_CONDUCT.md).
 
 
-
+[↑ Back to Top](#-table-of-contents)
