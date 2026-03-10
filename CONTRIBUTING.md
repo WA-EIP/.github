@@ -185,7 +185,10 @@ git push origin feature/your-feature-name
 
 </details>
 
-#### 2. Create a release branch 
+<details>
+<summary>
+2. Create a release branch
+</summary> <br />
 
 ```bash
 # Create release branch from main for the release cycle
@@ -195,8 +198,12 @@ git checkout -b release/0.1.0
 git push origin release/0.1.0
 ```
 
-#### 3. Create Feature Pull Request
+</details>
 
+<details>
+<summary>
+3. Create Feature Pull Request
+</summary> <br />
 1. Go to GitHub repository
 2. Click "Pull requests"
 3. Click "New pull request"
@@ -208,13 +215,23 @@ git push origin release/0.1.0
 7. Request reviews
 8. Tests will run automatically
 
-#### 4. Merge Features to Release Branch
+</details>
+
+<details>
+<summary>
+4. Merge Features to Release Branch
+</summary> <br />
 
 - Review and approve feature pull request
 - Merge approved features into release branch
 - Continue until release is ready
 
-#### 5. Create Release Pull Request
+</details>
+
+<details>
+<summary>
+5. Create Release Pull Request
+</summary> <br />
 
 1. Once release branch contains all intended features:
 2. Create PR from release branch to main
@@ -226,12 +243,19 @@ git push origin release/0.1.0
     - Updated dependencies (if any)
 5.  Request reviews
 
-#### 6. Final Release Process
+</details>
+
+<details>
+<summary>
+6. Final Release Process
+</summary> <br />
 
 When release pull request is approved and merged to main, the workflow automatically:
   - Creates a version tag (e.g., v0.1.0)
   - Generates GitHub Release with release notes
   - Closes the release cycle
+  
+</details>
 
 [↑ Back to Top](#-table-of-contents)
 
