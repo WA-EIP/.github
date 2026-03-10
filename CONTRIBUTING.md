@@ -170,6 +170,7 @@ git commit -m "chore: update dependencies"
 <summary>
 1. Start New Feature Development
 </summary> <br />
+
 ```bash
 # Create new feature branch from main
 git checkout main
@@ -181,6 +182,7 @@ git add .
 git commit -m "feat: add new functionality"
 git push origin feature/your-feature-name
 ```
+
 </details>
 
 #### 2. Create a release branch 
