@@ -15,15 +15,15 @@ Thank you for your interest in contributing! We're excited to work with you to i
 ---
 
 ## 📋 Table of Contents
-1. [How to Contribute](#-how-to-contribute)
-  - [Creating a New Repository](#-creating-a-new-repository)
-  - [Contributing to Existing Repositories](#-contributing-to-existing-repositories)
-2. [Documentation](#documentation)
-  - [Release Cycle Process](#release-cycle-process)
-  - [Branch Strategy](#branch-strategy)
-  - [Commit Guidelines](#commit-guidelines)
-  - [Step-by-Step Process](#step-by-step-process)
-3. [Best Practices Checklist](#-best-practices-checklist)
+- [How to Contribute](#-how-to-contribute)
+    - [Creating a New Repository](#-creating-a-new-repository)
+    - [Contributing to Existing Repositories](#-contributing-to-existing-repositories)
+- [Documentation](#documentation)
+    - [Release Cycle Process](#release-cycle-process)
+    - [Branch Strategy](#branch-strategy)
+    - [Commit Guidelines](#commit-guidelines)
+    - [Step-by-Step Process](#step-by-step-process)
+- [Best Practices Checklist](#-best-practices-checklist)
 
 ---
 
