@@ -75,7 +75,7 @@ We welcome contributions! You can contribute in many ways:
 
 ---
 
-### 🛠️ Contributing to Existing Repositories
+###️ 🛠️ Contributing to Existing Repositories
 
 To contribute to an existing project within the organization:
 
