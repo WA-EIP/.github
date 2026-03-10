@@ -14,6 +14,19 @@ Thank you for your interest in contributing! We're excited to work with you to i
 
 ---
 
+## 📋 Outline
+1. [How to Contribute] (#how-to-contribute)
+  - Creating a New Repository
+  - Contributing to Existing Repositories
+2. Commit Guidelines
+  - Release Cycle Process
+  - Branch Strategy
+  - Commit Guidelines
+  - Step-by-Step Process
+3. Best Practices Checklist
+
+---
+
 ## 🚀 How to Contribute
 
 We welcome contributions! You can contribute in many ways:
@@ -77,14 +90,13 @@ To contribute to an existing project within the organization:
 
 ---
 
-# Commit Guidelines
+## Commit Guidelines
 
-## Overview
 This section will outline our Release Cycle Process and detail commit guidelines.
 
 ---
 
-## Release Cycle Process
+### Release Cycle Process
 This repository uses an automated release workflow that manages versioning and releases through GitHub Actions. The process follows a structured branching strategy and automated releases through pull requests. If you would like to read more information about release cycles, please [click here].
 
 To initiate releases on the repo you created, please select the [NAME] workflow by following the steps below. 
@@ -95,7 +107,7 @@ To initiate releases on the repo you created, please select the [NAME] workflow 
 [click here]: https://nw-page.github.io/standards/gh/release.html
 ---
 
-## Branch Strategy
+### Branch Strategy
 The table below lists naming conventions you may use for your branches based off your main branch. Utilizing a branch strategy can help identify what work is being done in the branch.
 
 | Branch         | Purpose                                      |
@@ -110,7 +122,7 @@ The table below lists naming conventions you may use for your branches based off
 
 ---
 
-## Commit Guidelines
+### Commit Guidelines
 
 All commits must follow the conventional commits format listed below. Conventional commit formatting allows the automated release workflow to update the Release Cycle. 
 
@@ -134,9 +146,9 @@ git commit -m "fix: correct calculation bug"
 git commit -m "chore: update dependencies"
 ```
 
-## Step-by-Step Process
+### Step-by-Step Process
 
-### 1. Start New Feature Development
+#### 1. Start New Feature Development
 
 ```bash
 # Create new feature branch from main
@@ -150,7 +162,7 @@ git commit -m "feat: add new functionality"
 git push origin feature/your-feature-name
 ```
 
-### 2. Create a release branch 
+#### 2. Create a release branch 
 
 ```bash
 # Create release branch from main for the release cycle
@@ -160,7 +172,7 @@ git checkout -b release/0.1.0
 git push origin release/0.1.0
 ```
 
-### 3. Create Feature Pull Request
+#### 3. Create Feature Pull Request
 
 1. Go to GitHub repository
 2. Click "Pull requests"
@@ -173,13 +185,13 @@ git push origin release/0.1.0
 7. Request reviews
 8. Tests will run automatically
 
-### 4. Merge Features to Release Branch
+#### 4. Merge Features to Release Branch
 
 - Review and approve feature pull request
 - Merge approved features into release branch
 - Continue until release is ready
 
-### 5. Create Release Pull Request
+#### 5. Create Release Pull Request
 
 1. Once release branch contains all intended features:
 2. Create PR from release branch to main
@@ -191,7 +203,7 @@ git push origin release/0.1.0
     - Updated dependencies (if any)
 5.  Request reviews
 
-### 6. Final Release Process
+#### 6. Final Release Process
 
 When release pull request is approved and merged to main, the workflow automatically:
   - Creates a version tag (e.g., v0.1.0)
