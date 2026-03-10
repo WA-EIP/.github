@@ -15,8 +15,8 @@ Thank you for your interest in contributing! We're excited to work with you to i
 ---
 
 ## 📋 Outline
-1. [How to Contribute] (#how-to-contribute)
-  - Creating a New Repository
+1. [How to Contribute](#how-to-contribute)
+  - [Creating a New Repository](#creating-a-new-repository)
   - Contributing to Existing Repositories
 2. Commit Guidelines
   - Release Cycle Process
@@ -27,7 +27,7 @@ Thank you for your interest in contributing! We're excited to work with you to i
 
 ---
 
-## 🚀 [How to Contribute][toc]
+## 🚀 How to Contribute
 
 We welcome contributions! You can contribute in many ways:
 
