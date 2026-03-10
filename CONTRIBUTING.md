@@ -166,9 +166,10 @@ git commit -m "chore: update dependencies"
 ---
 
 ### ✏️ Step-by-Step Process
-
+<details>
+<summary>
 #### 1. Start New Feature Development
-
+</summary> <br />
 ```bash
 # Create new feature branch from main
 git checkout main
@@ -180,6 +181,7 @@ git add .
 git commit -m "feat: add new functionality"
 git push origin feature/your-feature-name
 ```
+</details>
 
 #### 2. Create a release branch 
 
@@ -264,7 +266,6 @@ Before publishing or contributing to a repository:
 - [ ] Repository includes standard files (`README`, `LICENSE`, etc.).
 - [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information.
 - [ ] Documentation is updated.
-   - [ ] Configure Version Cycle in Actions for your repo. 
    - [ ] **Optional**: Code/commits follow [Commit Guidelines](#-commit-guidelines).
 
 
