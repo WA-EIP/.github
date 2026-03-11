@@ -187,7 +187,7 @@ git push origin feature/your-feature-name
 
 <details>
 <summary>
-2. Create a release branch
+<b>2. Create a release branch</b>
 </summary> <br />
 
 ```bash
@@ -202,7 +202,7 @@ git push origin release/0.1.0
 
 <details>
 <summary>
-3. Create Feature Pull Request
+<b>3. Create Feature Pull Request</b>
 </summary> <br />
 
 1. Go to GitHub repository
@@ -220,7 +220,7 @@ git push origin release/0.1.0
 
 <details>
 <summary>
-4. Merge Features to Release Branch
+<b>4. Merge Features to Release Branch</b>
 </summary> <br />
 
 - Review and approve feature pull request
@@ -231,7 +231,7 @@ git push origin release/0.1.0
 
 <details>
 <summary>
-5. Create Release Pull Request
+<b>5. Create Release Pull Request</b>
 </summary> <br />
 
 1. Once release branch contains all intended features:
@@ -248,7 +248,7 @@ git push origin release/0.1.0
 
 <details>
 <summary>
-6. Final Release Process
+<b>6. Final Release Process</b>
 </summary> <br />
 
 When release pull request is approved and merged to main, the workflow automatically:
