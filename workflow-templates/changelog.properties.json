@@ -1,0 +1,13 @@
+{
+    "name": "Release Cycle Workflow",
+    "description": "WA EIP Release Cycle workflow template.",
+    "iconName": "octicon sync",
+    "categories": [
+        "Go"
+    ],
+    "filePatterns": [
+        "package.json$",
+        "^Dockerfile",
+        ".*\\.md$"
+    ]
+}
