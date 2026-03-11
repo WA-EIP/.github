@@ -109,21 +109,26 @@ This section will outline standards for documenting your repository to enhance c
 ### 🔁 Release Cycle Process
 This repository uses an automated release workflow that manages versioning and releases through GitHub Actions. The process follows a structured branching strategy and automated releases through pull requests. If you would like to read more information about release cycles, please [click here].
 
-To initiate releases on the repo you created, follow the steps below. <br>
+<details>
+<summary>
+<b>To initiate releases on the repo you created, follow the steps below. <br></b>
+</summary> <br />
+
 1. Once you have set up your repo with the standard files (`README`, `LICENSE`, etc.) and before you add your contributions (code, documents, etc.), click the Actions tab on the top banner. <br>
-![screenshot of banner](images/actions-tab.jpg) 
+![screenshot of banner](images/actions-tab.jpg)
 
 2. The Actions page will present several workflow options. Please navigate to the <b>Release Cycle Workflow</b> by Washington State - Emerging Infections Program (EIP). Click `Configure`.<br>
-![screenshot of actions](images/actions-page.jpg)
+<img src ="images/actions-page.jpg" alt="screenshot of actions" width="800" height="">
 
-3. The YAML file will appear. Click `Commit Changes...`  <br>
-![screenshot of first commit](images/first-commit.jpg)
+3. The YAML file will appear. Click `Commit Changes...` on the upper right hand corner. <br>
+<img src ="images/first-commit.jpg" alt="screenshot of first commit" width="1500" height="">
 
 4. A pop of confirming your commit will appear. You may select the option, `Commit directly to the main branch`. Then click `Commit changes`.<br>
-![screenshot of second commit](images/second-commit.jpg)
+<img src ="images/second-commit.jpg" alt="screenshot of second commit" width="500" height="">
 
 5. Your repo will now have Releases 👏
-
+</details>
+<br>
 
 [click here]: https://nw-page.github.io/standards/gh/release.html
 
