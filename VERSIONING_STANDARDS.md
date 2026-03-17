@@ -11,10 +11,9 @@ This section will outline standards for documenting your repository to enhance c
 - [Release Cycle Process](#-release-cycle-process)
 - [Branch Strategy](#-branch-strategy)
 - [Commit Guidelines](#-commit-guidelines)
-- [Step-by-Step Process](#-step-by-step-process)
+- [Step by Step Process](#️-step-by-step-process)
 - [Version Numbering](#-version-numbering)
 - [Important Notes](#-important-notes)
-- [Best Practices Checklist](#-best-practices-checklist)
 
 ---
 
@@ -44,7 +43,6 @@ This repository uses an automated release workflow that manages versioning and r
 
 [click here]: https://nw-page.github.io/standards/gh/release.html
 
-[↑ Back to Top](#-table-of-contents)
 
 ---
 
@@ -61,7 +59,6 @@ The table below lists naming conventions you may use for your branches based off
 | `refactor/*`   | Code refactoring                             |
 | `chore/*`      | Maintenance tasks                            |
 
-[↑ Back to Top](#-table-of-contents)
 
 ---
 
@@ -89,11 +86,10 @@ git commit -m "fix: correct calculation bug"
 git commit -m "chore: update dependencies"
 ```
 
-[↑ Back to Top](#-table-of-contents)
-
 ---
 
-## ✏️ Step-by-Step Process
+## ✏️ Step by Step Process
+ Instructions listed below demonstrate standard workflow for these tasks. There are multiple ways to achieve these results depending on your environment and preferences (command line interface, GitHub desktop, RStudio's Git Interface, etc.).
 <details>
 <summary>
 <b>1. Start New Feature Development </b>
@@ -186,7 +182,6 @@ When release pull request is approved and merged to main, the workflow automatic
   
 </details>
 
-[↑ Back to Top](#-table-of-contents)
 
 ---
 
@@ -197,7 +192,6 @@ Follow semantic versioning (MAJOR.MINOR.PATCH):
   - MINOR (0.1.0) - New features (backwards compatible)
   - PATCH (0.0.1) - Bug fixes
   
-[↑ Back to Top](#-table-of-contents)
 
 ---
 
