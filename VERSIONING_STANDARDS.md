@@ -89,6 +89,7 @@ git commit -m "chore: update dependencies"
 ---
 
 ## ✏️ Step by Step Process
+ Instructions listed below demonstrate standard workflow for these tasks. There are multiple ways to achieve these results depending on your environment and preferences (command line interface, GitHub desktop, RStudio's Git Interface, etc.).
 <details>
 <summary>
 <b>1. Start New Feature Development </b>

@@ -11,17 +11,20 @@
 
 #### ✅ Best Practices Checklist (🚧 UNDER CONSTRUCTION 🚧)
 Before publishing or contributing to a repository, please ensure of the following:
-- [ ] Install security hooks [link]
+- [ ] Install [pre-commit hooks](https://github.com/WA-EIP/hooks)
 -  [ ] Contributions follow the org’s [Code of Conduct](CODE_OF_CONDUCT.md)
-  - [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information
-
+- [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information
 -  [ ] When creating a new repository...
     - [ ] Follow [naming convention](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md#-creating-a-new-repository)
     - [ ] Add a detailed description of your repository
-    - [ ] Choose visibility: Internal or Private
-    - [ ] Add `README.md`
-  
+    - [ ] Choose visibility: Internal or Private [link]
+    - [ ] Turn on <b>Add README</b> to add `README.md`
+    - [ ] <b>Add .gitignore</b> by choosing the `R template`
+    - [ ] <b>Add license</b> by selecting `⚖️ MIT License`
     - [ ] Initiate [Release Cycle workflow](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md#-release-cycle-process)
+- [ ] Documentation is updated
+- [ ] Code/commits follow [Commit Guidelines](https://github.com/WA-EIP/.github/blob/md-files/VERSIONING_STANDARDS.md#-commit-guidelines)
+
 <!--
 
 👩‍💻 Check out our website! https://nwpage.org/

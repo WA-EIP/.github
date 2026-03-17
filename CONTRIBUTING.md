@@ -31,14 +31,13 @@ We welcome contributions! You can contribute in many ways:
 - By submitting Pull Request (PR) to fix opened issues
 - By submitting Pull Request (PR) to suggest new features (it is considered good practice to open an issue for discussion before working on a pull request for a new feature).
 
-[↑ Back to Top](#-table-of-contents)
 
 ---
 
 ### 🧱 Creating a New Repository
 
 1. **Get approval** from an org maintainer or core team (if required).
-2. **Create the repository** using the org’s [starter template](https://github.com/your-org/repo-template) (or clone an existing one).
+2. **Create the repository** following the [Best Practices Checklist](https://github.com/WA-EIP#-best-practices-checklist-) (or clone an existing one).
 
  > **Repository Naming Convention:**  
    > When creating a new repository within this org, please follow this naming convention to ensure clarity, consistency, and ease of navigation:  
@@ -59,17 +58,18 @@ We welcome contributions! You can contribute in many ways:
    > - `phskc-team-respnet-caseascertainment` (Public Health Seattle King County team working on RESP-NET case ascertainment scripts)  
 
 
-3. **Set up pre-commit secrets hook**
-   - Review our [security policy]([url](https://github.com/WA-EIP/.github/blob/main/SECURITY.md)) to correctly set up `.gitignore` and install a pre-commit hook for increased security
+3. **Set up pre-commit hook**
+   - Review our [security policy](SECURITY.md) to correctly set up [`.gitignore`](https://github.com/WA-EIP/.github/blob/main/SECURITY.md#gitignore) and install a [pre-commit hook](https://github.com/WA-EIP/hooks) for increased security
 4. **Add the following required files:**
    - `README.md`
+   - `.gitignore` - R template
+   - `⚖️ MIT License`
 5. **Set repository settings:**
    - Default branch to `main`
    - Enable branch protection rules (if needed)
    - Add teams or collaborators
 6. **Share your new repo** in the org’s communication channel so others can follow or contribute.
 
-[↑ Back to Top](#-table-of-contents)
 
 ---
 
@@ -84,6 +84,6 @@ To contribute to an existing project within the organization:
 5. **Open a pull request** and describe your changes clearly.
 6. Follow any **repository-specific guidelines** in that repo's `CONTRIBUTING.md`.
 
-Each repo may have its own workflow or requirements. Check the README or open an issue if you’re unsure.
+Each repo may have its own workflow or requirements. Check the `README` or open an issue if you’re unsure.
 
 [↑ Back to Top](#-table-of-contents)

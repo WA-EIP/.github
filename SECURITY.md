@@ -2,19 +2,18 @@
 
 This document defines the security expectations for using the Washington State - Emerging Infections Program GitHub organization. It focuses on preventing accidental disclosure of sensitive information and establishing guardrails for safe collaboration.
 
-It covers:
+<b>It covers:</b>
 * What information should not be committed or shared in GitHub (including in issues and pull requests)
-* Required and recommended repository guardrails such as `.gitignore`, GitHub Secret Scanning and Push Protection, and local secret hooks
+* Required and recommended repository guardrails such as `.gitignore`, GitHub Secret Scanning and Push Protection, and local pre-commit hooks
 * What to do if sensitive information is accidentally committed or pushed
 * How to report a suspected vulnerability
 
-This policy applies to:
+<b>This policy applies to:</b>
 * All repositories in this GitHub organization (public and private)
 * All contributors
 
-This policy does not replace agency, legal, or data use requirements.
-* Follow all applicable Washington State Department of Health policies and any data use agreements.
-   * If guidance conflicts, follow the stricter requirement.
+<b>This policy does not replace agency, legal, or data use requirements.</b>
+* Follow all applicable Washington State Department of Health policies and any data use agreements. <b><i>If guidance conflicts, follow the stricter requirement. </b></i>
 * Patient level or other restricted data should not be stored in GitHub. Use approved systems for storage and sharing.
 
 ---
@@ -22,9 +21,9 @@ This policy does not replace agency, legal, or data use requirements.
 ## 📋 Table of Contents
 - [Protect Sensitive Information](#protect-sensitive-information)
 - [Security Guardrails](#security-guardrails)
-   - [gitignore](#gitignore)
+   - [`.gitignore`](#gitignore)
    - [GitHub Push Protections](#github-push-protections)
-   - [Secret Hooks](#secret-hooks)
+   - [Pre-Commit Hooks](#pre-commit-hooks)
 - [If you accidentally commit or push sensitive information](#if-you-accidentally-commit-or-push-sensitive-information)
 - [Reporting a vulnerability](#reporting-a-vulnerability)
 - [References](#references)
@@ -57,7 +56,7 @@ If sensitive information is leaked and committed to a remote repository, it can 
 
 ## Security Guardrails
 
-We use layered controls to reduce the risk of accidentally exposing sensitive information in GitHub, including `.gitignore`, GitHub Push Protection, and local secret hooks. No single control is sufficient on its own.
+We use layered controls to reduce the risk of accidentally exposing sensitive information in GitHub, including `.gitignore`, GitHub Push Protection, and local pre-commit hooks. No single control is sufficient on its own.
 
 
 
@@ -101,11 +100,11 @@ Contributor expectations:
 * If you are unsure whether the flagged content is a secret, pause and contact the maintainers before bypassing the block
 
 
-### Secret Hooks
+### Pre-Commit Hooks
 
-In addition to GitHub’s push protection, we use pre-commit secret hooks as a local guardrail to reduce the chance of committing sensitive information in the first place. For example, if someone accidentally pushes a server name to the public repo, the hook will prevent that code from ever getting into the remote repo and will give the user a local error.
+In addition to GitHub’s push protection, we use pre-commit hooks as a local guardrail to reduce the chance of committing sensitive information in the first place. For example, if someone accidentally pushes a server name to the public repo, the hook will prevent that code from ever getting into the remote repo and will give the user a local error.
 
-What secret hooks are for:
+What pre-commit hooks are for:
 * They run locally during git actions (for example, at commit time)
 * They are intended to catch credentials and sensitive patterns before they ever reach GitHub
 * It allows us to define custom secrets and sensitive patterns for our needs
@@ -140,7 +139,7 @@ Preferred reporting method:
 Standards
 * https://nw-page.github.io/standards/gh/security.html
 
-Secret hooks
+Pre-Commit/Secret hooks
 * https://github.com/DOH-EPI-Coders/secret-hooks
 
 GitHub documentation
