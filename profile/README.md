@@ -11,16 +11,17 @@
 
 #### ✅ Best Practices Checklist (🚧 UNDER CONSTRUCTION 🚧)
 Before publishing or contributing to a repository, please ensure of the following:
- 
-- [ ] Contributions follow the org’s [Code of Conduct](CODE_OF_CONDUCT.md)
-- [ ] Documentation is updated
-   - [ ] **Optional**: Code/commits follow [Commit Guidelines](#-commit-guidelines) [link to commit guidelines section in versioning standard]
-- [ ] Create new repository
-    - [ ] Repository includes standard files (`README`, `LICENSE`, etc.)
-    - [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information
-        - [ ] Install security hook [link]
-    - [ ] Follow naming convention [link]
-    - [ ] Initiate Release Cycle workflow [link]
+- [ ] Install security hooks [link]
+-  [ ] Contributions follow the org’s [Code of Conduct](CODE_OF_CONDUCT.md)
+  - [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information
+
+-  [ ] When creating a new repository...
+    - [ ] Follow [naming convention](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md#-creating-a-new-repository)
+    - [ ] Add a detailed description of your repository
+    - [ ] Choose visibility: Internal or Private
+    - [ ] Add `README.md`
+  
+    - [ ] Initiate [Release Cycle workflow](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md#-release-cycle-process)
 <!--
 
 👩‍💻 Check out our website! https://nwpage.org/
