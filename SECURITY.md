@@ -2,30 +2,44 @@
 
 This document defines the security expectations for using the Washington State - Emerging Infections Program GitHub organization. It focuses on preventing accidental disclosure of sensitive information and establishing guardrails for safe collaboration.
 
-It covers:
+<b>It covers:</b>
 * What information should not be committed or shared in GitHub (including in issues and pull requests)
-* Required and recommended repository guardrails such as `.gitignore`, GitHub Secret Scanning and Push Protection, and local secret hooks
+* Required and recommended repository guardrails such as `.gitignore`, GitHub Secret Scanning and Push Protection, and local pre-commit hooks
 * What to do if sensitive information is accidentally committed or pushed
 * How to report a suspected vulnerability
 
-This policy applies to:
+<b>This policy applies to:</b>
 * All repositories in this GitHub organization (public and private)
 * All contributors
 
-This policy does not replace agency, legal, or data use requirements.
-* Follow all applicable Washington State Department of Health policies and any data use agreements.
-   * If guidance conflicts, follow the stricter requirement.
+<b>This policy does not replace agency, legal, or data use requirements.</b>
+* Follow all applicable Washington State Department of Health policies and any data use agreements. <b><i>If guidance conflicts, follow the stricter requirement. </b></i>
 * Patient level or other restricted data should not be stored in GitHub. Use approved systems for storage and sharing.
 
-## Protect sensitive information
+---
 
-> [!IMPORTANT]
-> **Objectives**
-> * Prevent sensitive information leaks to GitHub
-> * Set up guardrails such as `.gitignore`, GitHub protections, and local hooks
-> * Scrub private repositories before making them public
->
-> If sensitive information is leaked and committed to a remote repository, it can remain in git history and may require significant effort to remove.
+## 📋 Table of Contents
+- [Protect Sensitive Information](#protect-sensitive-information)
+- [Security Guardrails](#security-guardrails)
+   - [`.gitignore`](#gitignore)
+   - [GitHub Push Protections](#github-push-protections)
+   - [Pre-Commit Hooks](#pre-commit-hooks)
+- [If you accidentally commit or push sensitive information](#if-you-accidentally-commit-or-push-sensitive-information)
+- [Reporting a vulnerability](#reporting-a-vulnerability)
+- [References](#references)
+
+
+
+---
+
+## Protect Sensitive Information
+
+**Objectives**
+* Prevent sensitive information leaks to GitHub
+* Set up guardrails such as `.gitignore`, GitHub protections, and local hooks
+* Scrub private repositories before making them public
+
+If sensitive information is leaked and committed to a remote repository, it can remain in git history and may require significant effort to remove.
 
 > [!CAUTION]
 > If data is not already public, it likely should not be made public through a pull request or a commit.
@@ -39,9 +53,12 @@ This policy does not replace agency, legal, or data use requirements.
 | Credentials | SSH keys<br>Tokens (REDCap, Azure, GitHub, etc.)<br>AWS paths<br>Usernames<br>Passwords<br>Blob or bucket keys<br>Connection strings |
 | Identifiable Information | Case addresses<br>Case names<br>Any private health information (PHI)<br>Geographic location<br>|
 
-## Security guardrails
 
-We use layered controls to reduce the risk of accidentally exposing sensitive information in GitHub, including `.gitignore`, GitHub Push Protection, and local secret hooks. No single control is sufficient on its own.
+## Security Guardrails
+
+We use layered controls to reduce the risk of accidentally exposing sensitive information in GitHub, including `.gitignore`, GitHub Push Protection, and local pre-commit hooks. No single control is sufficient on its own.
+
+
 
 ### `.gitignore`
 
@@ -68,7 +85,8 @@ Contributor expectations:
 * If you include a configuration template in the repository, it must contain placeholders only and no real secrets
 * Do not add sensitive files to the repo and rely on `.gitignore` later. If a secret is committed once, it may persist in git history even after removal
 
-### GitHub push protections
+
+### GitHub Push Protections
 
 We have enabled GitHub Secret Scanning and Push Protection for every repository in the WA-EIP GitHub org.
 
@@ -81,11 +99,12 @@ Contributor expectations:
 * Remove the secret from the change, rotate or revoke it if it was real, then push again
 * If you are unsure whether the flagged content is a secret, pause and contact the maintainers before bypassing the block
 
-### Secret hooks
 
-In addition to GitHub’s push protection, we use pre-commit secret hooks as a local guardrail to reduce the chance of committing sensitive information in the first place. For example, if someone accidentally pushes a server name to the public repo, the hook will prevent that code from ever getting into the remote repo and will give the user a local error.
+### Pre-Commit Hooks
 
-What secret hooks are for:
+In addition to GitHub’s push protection, we use pre-commit hooks as a local guardrail to reduce the chance of committing sensitive information in the first place. For example, if someone accidentally pushes a server name to the public repo, the hook will prevent that code from ever getting into the remote repo and will give the user a local error.
+
+What pre-commit hooks are for:
 * They run locally during git actions (for example, at commit time)
 * They are intended to catch credentials and sensitive patterns before they ever reach GitHub
 * It allows us to define custom secrets and sensitive patterns for our needs
@@ -93,6 +112,7 @@ What secret hooks are for:
 How to install:
 * Follow the installation and update instructions [here](https://github.com/WA-EIP/hooks) to install pre-commit hooks for all of your repos.
 * Contact maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov) for additional support
+
 
 ## If you accidentally commit or push sensitive information
 
@@ -103,6 +123,7 @@ Act immediately
 4. If the secret was pushed, work with maintainers to remove it from git history using an approved history rewrite approach
 5. Confirm the new secret is stored securely and that prevention controls are in place before continuing work
 
+
 ## Reporting a vulnerability
 
 Please do not report security issues through public GitHub issues, discussions, or pull requests.
@@ -111,14 +132,19 @@ Preferred reporting method:
 * Contact the repository maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov)
 * Include a clear description of the issue, affected repository paths, steps to reproduce (if applicable), and potential impact
 
+[↑ Back to Top](#-table-of-contents)
+
 ## References
 
 Standards
 * https://nw-page.github.io/standards/gh/security.html
 
-Secret hooks
+Pre-Commit/Secret hooks
 * https://github.com/DOH-EPI-Coders/secret-hooks
 
 GitHub documentation
 * https://docs.github.com/en/code-security/concepts/secret-security/about-push-protection
 * https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning
+
+
+

@@ -11,16 +11,20 @@
 
 #### ✅ Best Practices Checklist
 Before publishing or contributing to a repository, please ensure of the following:
- 
-- [ ] Contributions follow the org’s [Code of Conduct](CODE_OF_CONDUCT.md)
+- [ ] Install [pre-commit hooks](https://github.com/WA-EIP/hooks)
+-  [ ] Contributions follow the org’s [Code of Conduct](CODE_OF_CONDUCT.md)
+- [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information
+-  [ ] When creating a new repository...
+    - [ ] Follow [naming convention](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md#-creating-a-new-repository)
+    - [ ] Add a detailed description of your repository
+    - [ ] Choose visibility: Internal or Private [link]
+    - [ ] Turn on <b>Add README</b> to add `README.md`
+    - [ ] <b>Add .gitignore</b> by choosing the `R template`
+    - [ ] <b>Add license</b> by selecting `⚖️ MIT License`
+    - [ ] Initiate [Release Cycle workflow](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md#-release-cycle-process)
 - [ ] Documentation is updated
-   - [ ] **Optional**: Code/commits follow [Commit Guidelines](#-commit-guidelines) [link to commit guidelines section in versioning standard]
-- [ ] Create new repository
-    - [ ] Repository includes standard files (`README`, `LICENSE`, etc.)
-    - [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information
-        - [ ] Install security hook [link]
-    - [ ] Follow naming convention [link]
-    - [ ] Initiate Release Cycle workflow [link]
+- [ ] Code/commits follow [Commit Guidelines](https://github.com/WA-EIP/.github/blob/md-files/VERSIONING_STANDARDS.md#-commit-guidelines)
+
 <!--
 
 👩‍💻 Check out our website! https://nwpage.org/
