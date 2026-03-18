@@ -39,7 +39,8 @@ This document defines the security expectations for using the Washington State -
 * Set up guardrails such as `.gitignore`, GitHub protections, and local hooks
 * Scrub private repositories before making them public
 
-> [!IMPORTANT] If sensitive information is leaked and committed to a remote repository, it can remain in git history and may require significant effort to remove.
+> [!IMPORTANT] 
+> If sensitive information is leaked and committed to a remote repository, it can remain in git history and may require significant effort to remove.
 
 **Repository Visibility**
 
