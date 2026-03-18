@@ -34,7 +34,7 @@ This repository uses an automated release workflow that manages versioning and r
 3. The YAML file will appear. Click `Commit Changes...` on the upper right hand corner. <br>
 <img src ="images/first-commit.jpg" alt="screenshot of first commit" width="1500" height="">
 
-4. A pop of confirming your commit will appear. You may select the option, `Commit directly to the main branch`. Then click `Commit changes`.<br>
+4. A pop of confirming your commit will appear. You may select the option, **Commit directly to the `main` branch**. Then click `Commit changes`.<br>
 <img src ="images/second-commit.jpg" alt="screenshot of second commit" width="500" height="">
 
 5. Your repo will now have Releases 👏

@@ -12,8 +12,8 @@
 #### ✅ Best Practices Checklist
 Before publishing or contributing to a repository, please ensure of the following:
 - [ ] Install [pre-commit hooks](https://github.com/WA-EIP/hooks)
--  [ ] Contributions follow the org’s [Code of Conduct](CODE_OF_CONDUCT.md)
-- [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information
+-  [ ] Contributions follow the org’s [Code of Conduct](https://github.com/WA-EIP/.github/blob/main/CODE_OF_CONDUCT.md)
+- [ ] Code follows [Security Policy](https://github.com/WA-EIP/.github/blob/main/SECURITY.md) and is sanitized of sensitive information
 -  [ ] When creating a new repository...
     - [ ] Follow [naming convention](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md#-creating-a-new-repository)
     - [ ] Add a detailed description of your repository
