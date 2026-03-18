@@ -42,8 +42,8 @@ We welcome contributions! You can contribute in many ways:
 
 3. **Create the repository**:
    
-   a. Follow **naming convention**:
-   <div style="background-color: #cbe1e7; padding: 20px; border-radius: 5px;">
+   -[ ] Follow **naming convention**:
+   <div style="background-color: #60b5cc; padding: 20px; border-radius: 5px;">
     <b>Repository Naming Convention</b><br>
       When creating a new repository within this org, please follow this naming convention to ensure clarity, consistency, and ease of navigation:  
 
@@ -62,18 +62,18 @@ We welcome contributions! You can contribute in many ways:
    > - `wadoh-rhino-respnet-casefinding` (Washington DOH RHINO team working on RESP-NET case finding scripts)  
    > - `phskc-team-respnet-caseascertainment` (Public Health Seattle King County team working on RESP-NET case ascertainment scripts) </div> <br>
 
-   b. Add a **detailed description** of your repository <br>
-   c. Choose **[visibility](https://github.com/WA-EIP/.github/blob/main/SECURITY.md#protect-sensitive-information)**: Internal or Private <br>
-   d. Turn on <b>Add README</b> to add `README.md` <br>
-   e. <b>Add .gitignore</b> by choosing the `R template` <br>
-   f. <b>Add license</b> by selecting `⚖️ MIT License` <br>
-   g. Initiate **[Release Cycle workflow](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md#-release-cycle-process)**
+   -[ ] Add a **detailed description** of your repository <br>
+   -[ ] Choose **[visibility](https://github.com/WA-EIP/.github/blob/main/SECURITY.md#protect-sensitive-information)**: Internal or Private <br>
+   -[ ] Turn on <b>Add README</b> to add `README.md` <br>
+   -[ ] <b>Add .gitignore</b> by choosing the `R template` <br>
+   -[ ] <b>Add license</b> by selecting `⚖️ MIT License` <br>
+   -[ ] Initiate **[Release Cycle workflow](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md#-release-cycle-process)**
 
 5. **Set repository settings:**
    - Default branch to `main`
    - Enable branch protection rules (if needed)
    - Add teams or collaborators
-6. **Share your new repo** in the org’s communication channel so others can follow or contribute.
+6. **Share your new repo** in the org’s communication channel so others can follow or contribute
 
 
 ---
@@ -82,12 +82,12 @@ We welcome contributions! You can contribute in many ways:
 
 To contribute to an existing project within the organization:
 
-1. **Find appropriate repository.** 
-2. **Fork or clone the repo.**
-3. **Create a branch** for your changes.
-4. **Make your updates** (code, docs, or other).
-5. **Open a pull request** and describe your changes clearly.
-6. Follow any **repository-specific guidelines** in that repo's `CONTRIBUTING.md`.
+1. **Find appropriate repository** 
+2. **Fork or clone the repo**
+3. **Create a branch** for your changes
+4. **Make your updates** (code, docs, or other)
+5. **Open a pull request** and describe your changes clearly
+6. Follow any **repository-specific guidelines** in that repo's `CONTRIBUTING.md`
 
 Each repo may have its own workflow or requirements. Check the `README` or open an issue if you’re unsure.
 
