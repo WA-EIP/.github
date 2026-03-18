@@ -39,7 +39,17 @@ This document defines the security expectations for using the Washington State -
 * Set up guardrails such as `.gitignore`, GitHub protections, and local hooks
 * Scrub private repositories before making them public
 
-If sensitive information is leaked and committed to a remote repository, it can remain in git history and may require significant effort to remove.
+> [!IMPORTANT] If sensitive information is leaked and committed to a remote repository, it can remain in git history and may require significant effort to remove.
+
+**Repository Visibility**
+
+There are three visibility types when you create a new repository:
+1. **Public**: Anyone on the internet can see this repository. You choose who can commit.
+2. **Internal**: WA DOH enterprise members can see this repository. You choose who can commit.
+3. **Private**: You choose who can see and commit to this repository.
+
+To ensure the security of your contributions to the WA-EIP GitHub, please select either **Internal** or **Private** visibility. Keeping your repository off the Public setting prevents accidental data exposure to the general public.
+
 
 > [!CAUTION]
 > If data is not already public, it likely should not be made public through a pull request or a commit.
@@ -64,7 +74,7 @@ We use layered controls to reduce the risk of accidentally exposing sensitive in
 
 `.gitignore` helps prevent accidental commits of local files that may contain sensitive information. It is bad practice and a security risk to add private credentials to a script. If your script contains things like passwords, server names, or network drives, be aware that that information may be publicly visible when you push it to a remote git/github repo. Many of our scripts must call passwords and server names in order for them to work properly, so we need a way to hide that information from the public but still be able to run the scripts locally. `.gitignore` can help achieve this.
 
-**Example `.gitignore` patterns**
+**Example `.gitignore` Patterns**
 ```
 # Excel files  
 *.xlsx  
@@ -79,12 +89,15 @@ We use layered controls to reduce the risk of accidentally exposing sensitive in
 
 The example `.gitignore` file above contains all files with an excel, log, or txt extension. This means that any file with those extensions that you create in your local clone of the repo will exist for you, but those filetypes cannot and will not ever be pushed into the repo from your local clone.
 
-Contributor expectations:
+<b>Contributor Expectations:</b>
 * Never hardcode credentials in scripts
 * Store secrets in local configuration files (for example `.env`, `.json`, `.txt`, `rcreds`) that are excluded by `.gitignore`, or use environment variables
 * If you include a configuration template in the repository, it must contain placeholders only and no real secrets
 * Do not add sensitive files to the repo and rely on `.gitignore` later. If a secret is committed once, it may persist in git history even after removal
 
+**`.gitignore` Templates**
+
+Using a language-specific `.gitignore` template provides a comprehensive starting point. These templates serve as a foundation and can be adapted to meet your project's specific needs.
 
 ### GitHub Push Protections
 
