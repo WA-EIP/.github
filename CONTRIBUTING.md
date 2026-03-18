@@ -42,32 +42,33 @@ We welcome contributions! You can contribute in many ways:
 
 3. **Create the repository**:
    
-   -[ ] Follow **naming convention**:
-   <div style="background-color: #60b5cc; padding: 20px; border-radius: 5px;">
-    <b>Repository Naming Convention</b><br>
+   - Follow **naming convention**:
+
+      <details open>
+      <summary><b>Repository Naming Convention</b><br></summary>
       When creating a new repository within this org, please follow this naming convention to ensure clarity, consistency, and ease of navigation:  
 
-   `<organization>-<team>-<project>-<sub-project>-<optional:platform>`  
+      `<organization>-<team>-<project>-<sub-project>-<optional:platform>`  
 
-   | Segment                  | Description                                                                  |  
-   |--------------------------|------------------------------------------------------------------------------|  
-   | `<organization>`         | The organization or partner name (e.g., `wadoh`, `phskc`)                |  
-   | `<team>`                 | Team or department responsible (e.g., `diqa`, `rhino`, `phskc`, etc.)                   |  
-   | `<project>`              | Main project or domain (e.g., `respnet`, `mpox`)                     |  
-   | `<sub-project>`          | Specific component or module (e.g., `reporting`, `etl`)                      |  
-   | `<platform>` _(optional)_| Platform or environment used (e.g., `dbx`)                     |  
+      | Segment                  | Description                                                                  |  
+      |--------------------------|------------------------------------------------------------------------------|  
+      | `<organization>`         | The organization or partner name (e.g., `wadoh`, `phskc`)                |  
+      | `<team>`                 | Team or department responsible (e.g., `diqa`, `rhino`, `phskc`, etc.)                   |  
+      | `<project>`              | Main project or domain (e.g., `respnet`, `mpox`)                     |  
+      | `<sub-project>`          | Specific component or module (e.g., `reporting`, `etl`)                      |  
+      | `<platform>` _(optional)_| Platform or environment used (e.g., `dbx`)                     |  
 
-   > **Examples:**  
-   > - `wadoh-diqa-respnet-reporting-dbx` (Washington DOH DIQA team working on RESP-NET reporting pipeline in Databricks)  
-   > - `wadoh-rhino-respnet-casefinding` (Washington DOH RHINO team working on RESP-NET case finding scripts)  
-   > - `phskc-team-respnet-caseascertainment` (Public Health Seattle King County team working on RESP-NET case ascertainment scripts) </div> <br>
-
-   -[ ] Add a **detailed description** of your repository <br>
-   -[ ] Choose **[visibility](https://github.com/WA-EIP/.github/blob/main/SECURITY.md#protect-sensitive-information)**: Internal or Private <br>
-   -[ ] Turn on <b>Add README</b> to add `README.md` <br>
-   -[ ] <b>Add .gitignore</b> by choosing the `R template` <br>
-   -[ ] <b>Add license</b> by selecting `⚖️ MIT License` <br>
-   -[ ] Initiate **[Release Cycle workflow](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md#-release-cycle-process)**
+      > **Examples:**  
+      > - `wadoh-diqa-respnet-reporting-dbx` (Washington DOH DIQA team working on RESP-NET reporting pipeline in Databricks)  
+      > - `wadoh-rhino-respnet-casefinding` (Washington DOH RHINO team working on RESP-NET case finding scripts)  
+      > - `phskc-team-respnet-caseascertainment` (Public Health Seattle King County team working on RESP-NET case ascertainment scripts)
+      </details> <br>
+   - Add a **detailed description** of your repository <br>
+   -  Choose **[visibility](https://github.com/WA-EIP/.github/blob/main/SECURITY.md#protect-sensitive-information)**: Internal or Private <br>
+   - Turn on <b>Add README</b> to add `README.md` <br>
+   - <b>Add .gitignore</b> by choosing the `R template` <br>
+   - <b>Add license</b> by selecting `⚖️ MIT License` <br>
+   - Initiate **[Release Cycle workflow](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md#-release-cycle-process)**
 
 5. **Set repository settings:**
    - Default branch to `main`
