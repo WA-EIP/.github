@@ -34,7 +34,7 @@ This document defines the security expectations for using the Washington State -
 
 ## Protect Sensitive Information
 
-**Objectives**
+### Objectives
 * Prevent sensitive information leaks to GitHub
 * Set up guardrails such as `.gitignore`, GitHub protections, and local hooks
 * Scrub private repositories before making them public
@@ -42,7 +42,7 @@ This document defines the security expectations for using the Washington State -
 > [!IMPORTANT] 
 > If sensitive information is leaked and committed to a remote repository, it can remain in git history and may require significant effort to remove.
 
-**Repository Visibility**
+### Repository Visibility
 
 There are three visibility types when you create a new repository:
 1. **Public**: Anyone on the internet can see this repository. You choose who can commit.
@@ -104,11 +104,11 @@ Using a language-specific `.gitignore` template provides a comprehensive startin
 
 We have enabled GitHub Secret Scanning and Push Protection for every repository in the WA-EIP GitHub org.
 
-What this does:
+**What this does:**
 * Secret scanning helps detect secrets that were committed
 * Push protection scans code pushes and blocks pushes containing supported secret types, and it can generate an alert when a contributor bypasses the block
 
-Contributor expectations:
+**Contributor expectations:**
 * If your push is blocked, assume a real exposure risk until proven otherwise
 * Remove the secret from the change, rotate or revoke it if it was real, then push again
 * If you are unsure whether the flagged content is a secret, pause and contact the maintainers before bypassing the block
@@ -118,19 +118,19 @@ Contributor expectations:
 
 In addition to GitHub’s push protection, we use pre-commit hooks as a local guardrail to reduce the chance of committing sensitive information in the first place. For example, if someone accidentally pushes a server name to the public repo, the hook will prevent that code from ever getting into the remote repo and will give the user a local error.
 
-What pre-commit hooks are for:
+**What pre-commit hooks are for:**
 * They run locally during git actions (for example, at commit time)
 * They are intended to catch credentials and sensitive patterns before they ever reach GitHub
 * It allows us to define custom secrets and sensitive patterns for our needs
 
-How to install:
+**How to install:**
 * Follow the installation and update instructions [here](https://github.com/WA-EIP/hooks) to install pre-commit hooks for all of your repos.
 * Contact maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov) for additional support
 
 
 ## If you accidentally commit or push sensitive information
 
-Act immediately
+**Act immediately**
 1. Stop further pushes and notify the repository maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov)
 2. Rotate or revoke the exposed credential or token immediately
 3. Remove the secret from the working tree
@@ -142,7 +142,7 @@ Act immediately
 
 Please do not report security issues through public GitHub issues, discussions, or pull requests.
 
-Preferred reporting method:
+**Preferred reporting method:**
 * Contact the repository maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov)
 * Include a clear description of the issue, affected repository paths, steps to reproduce (if applicable), and potential impact
 

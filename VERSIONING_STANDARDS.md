@@ -64,7 +64,7 @@ The table below lists naming conventions you may use for your branches based off
 
 ## 🔒 Commit Guidelines
 
-All commits must follow the conventional commits format listed below. Conventional commit formatting allows the automated release workflow to update the Release Cycle. 
+Conventional commit formatting allows the automated release workflow to update your repository's Release Cycle. All commits must follow the format listed below. 
 
 - ✅ `feat:` - Use when adding a new feature.
 - 🐞 `fix:` - Use when fixing a bug.
@@ -79,12 +79,12 @@ All commits must follow the conventional commits format listed below. Convention
 - ⏪ `revert:` - Reverting/undoing commits or previous changes
 
 
-Example:
-```bash
-git commit -m "feat: add data validation"
-git commit -m "fix: correct calculation bug"
-git commit -m "chore: update dependencies"
-```
+> Example:
+> ```bash
+> git commit -m "feat: add data validation"
+> git commit -m "fix: correct calculation bug"
+> git commit -m "chore: update dependencies"
+> ```
 
 ---
 

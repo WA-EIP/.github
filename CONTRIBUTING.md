@@ -16,8 +16,8 @@ Thank you for your interest in contributing! We're excited to work with you to i
 
 ## 📋 Table of Contents
 - [How to Contribute](#-how-to-contribute)
-    - [Creating a New Repository](#-creating-a-new-repository)
-    - [Contributing to Existing Repositories](#-contributing-to-existing-repositories)
+- [Creating a New Repository](#-creating-a-new-repository)
+- [Contributing to Existing Repositories](#-contributing-to-existing-repositories)
 
 ---
 
@@ -34,7 +34,7 @@ We welcome contributions! You can contribute in many ways:
 
 ---
 
-### 🧱 Creating a New Repository
+## 🧱 Creating a New Repository
 
 1. **Get approval** from an org maintainer or core team (if required)
 
@@ -79,7 +79,7 @@ We welcome contributions! You can contribute in many ways:
 
 ---
 
-### 🛠 Contributing to Existing Repositories
+## 🛠 Contributing to Existing Repositories
 
 To contribute to an existing project within the organization:
 
