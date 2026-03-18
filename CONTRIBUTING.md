@@ -42,7 +42,7 @@ We welcome contributions! You can contribute in many ways:
 
 3. **Create the repository**:
    
-   - Follow **naming convention**:
+   - [ ] Follow **naming convention**:
 
       <details open>
       <summary><b>Repository Naming Convention</b><br></summary>
