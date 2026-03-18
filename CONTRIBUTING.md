@@ -63,12 +63,12 @@ We welcome contributions! You can contribute in many ways:
       > - `wadoh-rhino-respnet-casefinding` (Washington DOH RHINO team working on RESP-NET case finding scripts)  
       > - `phskc-team-respnet-caseascertainment` (Public Health Seattle King County team working on RESP-NET case ascertainment scripts)
       </details> <br>
-   - Add a **detailed description** of your repository <br>
-   -  Choose **[visibility](https://github.com/WA-EIP/.github/blob/main/SECURITY.md#protect-sensitive-information)**: Internal or Private <br>
-   - Turn on <b>Add README</b> to add `README.md` <br>
-   - <b>Add .gitignore</b> by choosing the `R template` <br>
-   - <b>Add license</b> by selecting `⚖️ MIT License` <br>
-   - Initiate **[Release Cycle workflow](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md#-release-cycle-process)**
+   - [ ] Add a **detailed description** of your repository <br>
+   - [ ] Choose **[visibility](https://github.com/WA-EIP/.github/blob/main/SECURITY.md#protect-sensitive-information)**: Internal or Private <br>
+   - [ ] Turn on <b>Add README</b> to add `README.md` <br>
+   - [ ] <b>Add .gitignore</b> by choosing the `R template` <br>
+   - [ ] <b>Add license</b> by selecting `⚖️ MIT License` <br>
+   - [ ] Initiate **[Release Cycle workflow](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md#-release-cycle-process)**
 
 5. **Set repository settings:**
    - Default branch to `main`
