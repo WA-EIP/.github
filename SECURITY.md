@@ -21,9 +21,9 @@ This document defines the security expectations for using the Washington State -
 ## 📋 Table of Contents
 - [Protect Sensitive Information](#protect-sensitive-information)
 - [Security Guardrails](#security-guardrails)
-   - [`.gitignore`](#gitignore)
-   - [GitHub Push Protections](#github-push-protections)
-   - [Pre-Commit Hooks](#pre-commit-hooks)
+   - [`.gitignore`](#1-gitignore)  
+   - [GitHub Push Protections](#2-github-push-protections)
+   - [Pre-Commit Hooks](#3-pre-commit-hooks)
 - [If you accidentally commit or push sensitive information](#if-you-accidentally-commit-or-push-sensitive-information)
 - [Reporting a vulnerability](#reporting-a-vulnerability)
 - [References](#references)
