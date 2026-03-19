@@ -58,17 +58,21 @@ Conventional commit formatting allows the release workflow to update your reposi
 | `feat:` | MINOR `(0.1.0)` | Introducing a new feature |
 | `feat:` (with `BREAKING CHANGE:` footer) | MAJOR `(1.0.0)` | Introducing a breaking change |
 
-**The following commit types are informational only and will not trigger a release:**
-- 🧹 `chore:` - Use for updates that don't affect functionality: updates to dependencies or cleanup.
-- 📚 `docs:` - Documentation changes only (updating README or other docs).
-- 🎨 `style:` - Code style changes (formatting, indentation, spacing, etc.) without changing logic.
-- 🧼 `refactor:` - Code refactoring (renaming variables, objects, splitting functions) without changing logic.
-- ⚡ `perf:` - Code that improves performance without changing logic.
-- 🧪 `test:` - Test updates
-- 🛠️ `build:` - Build system changes
-- 🔁 `ci:` - CI configuration changes (GitHub actions, etc.)
-- ⏪ `revert:` - Reverting/undoing commits or previous changes
+<br>
 
+**The following commit types are informational only and will not trigger a release:**
+| Commit Type | When to Use |
+|---|---|
+🧹 `chore:` | Use for updates that don't affect functionality: updates to dependencies or cleanup
+📚 `docs:` | Documentation changes only (updating README or other docs)
+🎨 `style:` | Code style changes (formatting, indentation, spacing, etc.) without changing logic
+🧼 `refactor:` | Code refactoring (renaming variables, objects, splitting functions) without changing logic
+⚡ `perf:` | Code that improves performance without changing logic
+🧪 `test:` | Test updates
+🛠️ `build:` | Build system changes
+🔁 `ci:` | CI configuration changes (GitHub actions, etc.)
+⏪ `revert:` | Reverting/undoing commits or previous changes
+<br>
 
 > Example:
 > ```bash
