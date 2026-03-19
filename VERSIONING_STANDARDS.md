@@ -52,11 +52,11 @@ Conventional commit formatting allows the release workflow to update your reposi
 
  **Only the following commit types will trigger an automated GitHub release. Follow semantic versioning (MAJOR.MINOR.PATCH):**
 
-| Commit Type | Version Bump | When to Use |
+| Commit Type | Version Change | When to Use |
 |---|---|---|
 | `fix:` | PATCH `(0.0.1)` | Squashing a bug in the codebase |
 | `feat:` | MINOR `(0.1.0)` | Introducing a new feature |
-| `feat:` (with `BREAKING CHANGE:` footer) | MAJOR `(1.0.0)` | Introducing a breaking API change |
+| `feat:` (with `BREAKING CHANGE:` footer) | MAJOR `(1.0.0)` | Introducing a breaking change |
 
 **The following commit types are informational only and will not trigger a release:**
 - 🧹 `chore:` - Use for updates that don't affect functionality: updates to dependencies or cleanup.
