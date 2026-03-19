@@ -17,7 +17,7 @@ This section will outline standards for documenting your repository to enhance c
 ---
 
 ## 🔁 Release Cycle Process
-This repository uses an automated release workflow that manages versioning and releases through GitHub Actions. Automated releases are triggered through [commit messages](#-commit-guidelines). 
+Repositories in this org should use an automated release workflow that manages versioning and releases through GitHub Actions. Automated releases are triggered through [commit messages](#-commit-guidelines). 
 If you would like to read more information about release cycles, please [click here].
 
 <details>
