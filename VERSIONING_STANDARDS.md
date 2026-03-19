@@ -2,23 +2,23 @@
 
 # ⚖️ Versioning Standards
 
-This section will outline standards for documenting your repository to enhance collaboration, provide clarity and ease adaptation across teams. Please follow the [Release Cycle Process](#-release-cycle-process), [Branch Strategy](#-branch-strategy), and [Commit Guidelines](#-commit-guidelines) to organize and manage contents in your repo.
+This section will outline standards for documenting your repository to enhance collaboration, provide clarity and ease adaptation across teams. Please follow the [Release Cycle Process](#-release-cycle-process), [Commit Guidelines](#-commit-guidelines), and [Branch Strategy](#-branch-strategy) to organize and manage contents in your repo.
 
 
 ---
 
 ## 📋 Table of Contents
 - [Release Cycle Process](#-release-cycle-process)
-- [Branch Strategy](#-branch-strategy)
 - [Commit Guidelines](#-commit-guidelines)
+- [Branch Strategy](#-branch-strategy)
 - [Step by Step Process](#️-step-by-step-process)
-- [Version Numbering](#-version-numbering)
 - [Important Notes](#-important-notes)
 
 ---
 
 ## 🔁 Release Cycle Process
-This repository uses an automated release workflow that manages versioning and releases through GitHub Actions. The process follows a structured branching strategy and automated releases through pull requests. If you would like to read more information about release cycles, please [click here].
+This repository uses an automated release workflow that manages versioning and releases through GitHub Actions. Automated releases are triggered through [commit messages](#-commit-guidelines). 
+If you would like to read more information about release cycles, please [click here].
 
 <details>
 <summary>
@@ -46,28 +46,19 @@ This repository uses an automated release workflow that manages versioning and r
 
 ---
 
-## 🌳 Branch Strategy
-The table below lists naming conventions you may use for your branches based off your main branch. Utilizing a branch strategy can help identify what work is being done in the branch.
-
-| Branch         | Purpose                                      |
-|----------------|----------------------------------------------|
-| `main`         | Production-ready code                        |
-| `release/*`    | Release preparation (e.g., `release/0.1.0`)  |
-| `feature/*`    | New feature development                      |
-| `fix/*`        | Bug fixes                                    |
-| `docs/*`       | Documentation changes                        |
-| `refactor/*`   | Code refactoring                             |
-| `chore/*`      | Maintenance tasks                            |
-
-
----
-
 ## 🔒 Commit Guidelines
 
-Conventional commit formatting allows the automated release workflow to update your repository's Release Cycle. All commits must follow the format listed below. 
+Conventional commit formatting allows the release workflow to update your repository's Release Cycle automatically. All commits should follow the formats listed below. 
 
-- ✅ `feat:` - Use when adding a new feature.
-- 🐞 `fix:` - Use when fixing a bug.
+ **Only the following commit types will trigger an automated GitHub release. Follow semantic versioning (MAJOR.MINOR.PATCH):**
+
+| Commit Type | Version Bump | When to Use |
+|---|---|---|
+| `fix:` | PATCH `(0.0.1)` | Squashing a bug in the codebase |
+| `feat:` | MINOR `(0.1.0)` | Introducing a new feature |
+| `feat:` (with `BREAKING CHANGE:` footer) | MAJOR `(1.0.0)` | Introducing a breaking API change |
+
+**The following commit types are informational only and will not trigger a release:**
 - 🧹 `chore:` - Use for updates that don't affect functionality: updates to dependencies or cleanup.
 - 📚 `docs:` - Documentation changes only (updating README or other docs).
 - 🎨 `style:` - Code style changes (formatting, indentation, spacing, etc.) without changing logic.
@@ -85,6 +76,23 @@ Conventional commit formatting allows the automated release workflow to update y
 > git commit -m "fix: correct calculation bug"
 > git commit -m "chore: update dependencies"
 > ```
+
+
+---
+
+## 🌳 Branch Strategy
+The table below lists naming conventions you may use for your branches based off your main branch. Utilizing a branch strategy can help identify what work is being done in the branch.
+
+| Branch         | Purpose                                      |
+|----------------|----------------------------------------------|
+| `main`         | Production-ready code                        |
+| `release/*`    | Release preparation (e.g., `release/0.1.0`)  |
+| `feature/*`    | New feature development                      |
+| `fix/*`        | Bug fixes                                    |
+| `docs/*`       | Documentation changes                        |
+| `refactor/*`   | Code refactoring                             |
+| `chore/*`      | Maintenance tasks                            |
+
 
 ---
 
@@ -181,16 +189,6 @@ When release pull request is approved and merged to main, the workflow automatic
   - Closes the release cycle
   
 </details>
-
-
----
-
-## 🔢 Version Numbering
-
-Follow semantic versioning (MAJOR.MINOR.PATCH):
-  - MAJOR (1.0.0) - Breaking changes
-  - MINOR (0.1.0) - New features (backwards compatible)
-  - PATCH (0.0.1) - Bug fixes
   
 
 ---
