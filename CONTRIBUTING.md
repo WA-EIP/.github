@@ -7,7 +7,7 @@ Thank you for your interest in contributing! We're excited to work with you to i
 ## 📌 Before You Begin
 
 - Please read our [Code of Conduct](CODE_OF_CONDUCT.md)
-- If you are new to GitHub, please review this introduction to [Collaborating on GitHub](https://nw-page.github.io/standards/gh/gh_collab_tutorial.html#steps-for-collaborating-on-github-using-the-command-line)
+- If you are new to GitHub, please review this introduction to [Collaborating on GitHub](https://nw-page.github.io/standards/gh/gh_collab_tutorial.html)
 - Make sure to check for existing issues or pull requests before creating new ones
 - For questions or ideas, feel free to open a discussion or reach out directly via our communication channels or reach out at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov)
 - Follow the organization’s [Security Policy](SECURITY.md)
