@@ -71,7 +71,7 @@ We use layered controls to reduce the risk of accidentally exposing sensitive in
 
 
 
-### `.gitignore`
+### 1. `.gitignore`
 
 `.gitignore` helps prevent accidental commits of local files that may contain sensitive information. It is bad practice and a security risk to add private credentials to a script. If your script contains things like passwords, server names, or network drives, be aware that that information may be publicly visible when you push it to a remote git/github repo. Many of our scripts must call passwords and server names in order for them to work properly, so we need a way to hide that information from the public but still be able to run the scripts locally. `.gitignore` can help achieve this.
 
@@ -100,7 +100,7 @@ The example `.gitignore` file above contains all files with an excel, log, or tx
 
 Using a language-specific `.gitignore` template provides a comprehensive starting point. These templates serve as a foundation and can be adapted to meet your project's specific needs.
 
-### GitHub Push Protections
+### 2. GitHub Push Protections
 
 We have enabled GitHub Secret Scanning and Push Protection for every repository in the WA-EIP GitHub org.
 
@@ -114,7 +114,7 @@ We have enabled GitHub Secret Scanning and Push Protection for every repository 
 * If you are unsure whether the flagged content is a secret, pause and contact the maintainers before bypassing the block
 
 
-### Pre-Commit Hooks
+### 3. Pre-Commit Hooks
 
 In addition to GitHub’s push protection, we use pre-commit hooks as a local guardrail to reduce the chance of committing sensitive information in the first place. For example, if someone accidentally pushes a server name to the public repo, the hook will prevent that code from ever getting into the remote repo and will give the user a local error.
 
