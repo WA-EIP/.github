@@ -17,7 +17,7 @@ Before publishing or contributing to a repository, please ensure of the followin
 -  [ ] When creating a new repository...
     - [ ] Follow [naming convention](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md#-creating-a-new-repository)
     - [ ] Add a detailed description of your repository
-    - [ ] Choose visibility: Internal or Private [link]
+    - [ ] Choose [visibility](https://github.com/WA-EIP/.github/blob/main/SECURITY.md#protect-sensitive-information): Internal or Private
     - [ ] Turn on <b>Add README</b> to add `README.md`
     - [ ] <b>Add .gitignore</b> by choosing the `R template`
     - [ ] <b>Add license</b> by selecting `⚖️ MIT License`
