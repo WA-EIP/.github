@@ -37,7 +37,7 @@ If you would like to read more information about release cycles, please [click h
 4. A pop of confirming your commit will appear. You may select the option, **Commit directly to the `main` branch**. Then click `Commit changes`.<br>
 <img src ="images/second-commit.jpg" alt="screenshot of second commit" width="500" height="">
 
-5. Your repo will now have Releases 👏
+5. Your `main` branch in the repo will now have Releases 👏
 </details>
 <br>
 
@@ -57,6 +57,21 @@ Conventional commit formatting allows the release workflow to update your reposi
 | `fix:` | PATCH `(0.0.1)` | Squashing a bug in the codebase |
 | `feat:` | MINOR `(0.1.0)` | Introducing a new feature |
 | `feat:` (with `BREAKING CHANGE:` footer) | MAJOR `(1.0.0)` | Introducing a breaking change |
+
+### Examples
+> ```bash
+> fix: update date formatting
+> ```
+
+> ```bash
+> feat: send email to team when code successfully runs or errors out
+> ```
+
+> ```bash
+> feat: add new script for LHJ X
+>
+> BREAKING CHANGE: LHJ X is now included in pipeline
+> ```
 
 <br>
 
@@ -85,7 +100,7 @@ Conventional commit formatting allows the release workflow to update your reposi
 ---
 
 ## 🌳 Branch Strategy
-The table below lists naming conventions you may use for your branches based off your main branch. Utilizing a branch strategy can help identify what work is being done in the branch.
+The table below lists naming conventions you may use for your branches based off your `main` branch. Utilizing a branch strategy can help identify what work is being done in the branch.
 
 | Branch         | Purpose                                      |
 |----------------|----------------------------------------------|
@@ -101,11 +116,12 @@ The table below lists naming conventions you may use for your branches based off
 ---
 
 ## ✏️ Step by Step Process
- Instructions listed below demonstrate standard workflow for these tasks. There are multiple ways to achieve these results depending on your environment and preferences (command line interface, GitHub desktop, RStudio's Git Interface, etc.).
+ Instructions listed below demonstrate recommended, standard workflow for these tasks. There are multiple ways to achieve these results depending on your environment and preferences (command line interface, GitHub desktop, RStudio's Git Interface, etc.).
 <details>
 <summary>
 <b>1. Start New Feature Development </b>
 </summary> <br />
+Creating a new feature branch from your `main` branch allows you to develop new features or fix bugs by copying the environment of the `main` branch without affecting its ongoing work. Once you start a new branch, work on your feature and commit your changes using conventional commits.
 
 ```bash
 # Create new feature branch from main
@@ -125,6 +141,7 @@ git push origin feature/your-feature-name
 <summary>
 <b>2. Create a release branch</b>
 </summary> <br />
+The below shows how to create a release branch by copying the environment of `main` and publishing the release branch for you and your team to work off of.
 
 ```bash
 # Create release branch from main for the release cycle
@@ -140,6 +157,8 @@ git push origin release/0.1.0
 <summary>
 <b>3. Create Feature Pull Request</b>
 </summary> <br />
+
+Create a pull request when your feature is complete, tested and ready for review.
 
 1. Go to GitHub repository
 2. Click "Pull requests"
@@ -159,9 +178,11 @@ git push origin release/0.1.0
 <b>4. Merge Features to Release Branch</b>
 </summary> <br />
 
-- Review and approve feature pull request
-- Merge approved features into release branch
-- Continue until release is ready
+Merging features to a release branch will allow for any bug fixes and any other finalizations before the code merges into `main` and reaches production.
+
+1. Review and approve feature pull request
+2. Merge approved features into release branch
+3. Continue until release is ready
 
 </details>
 
@@ -170,8 +191,10 @@ git push origin release/0.1.0
 <b>5. Create Release Pull Request</b>
 </summary> <br />
 
+Create another pull request to merge your release branch into `main` for production.
+
 1. Once release branch contains all intended features:
-2. Create PR from release branch to main
+2. Create PR from release branch to `main`
 3. Title must follow commit convention (e.g., "release: v0.1.0")
 4. Description should include:
     - Summary of changes
@@ -201,7 +224,7 @@ When release pull request is approved and merged to main, the workflow automatic
 
 - All changes must go through pull requests
 - Pull request titles must follow conventional commit format
-- Release pull requests require approval before merging to main
+- Release pull requests require approval before merging to `main`
 - Tests must pass before merges are allowed
 - Each release should have clear documentation of changes
 
