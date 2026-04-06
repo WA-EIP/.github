@@ -4,7 +4,7 @@ This document defines the security expectations for using the Washington State -
 
 <b>It covers:</b>
 * What information should not be committed or shared in GitHub (including in issues and pull requests)
-* Required and recommended repository guardrails such as `.gitignore`, GitHub Secret Scanning and Push Protection, and local pre-commit hooks
+* Required repository guardrails such as `.gitignore`, GitHub Secret Scanning and Push Protection, and local pre-commit hooks
 * What to do if sensitive information is accidentally committed or pushed
 * How to report a suspected vulnerability
 
@@ -98,7 +98,7 @@ The example `.gitignore` file above contains all files with an excel, log, or tx
 
 **`.gitignore` Templates**
 
-Using a language-specific `.gitignore` template provides a comprehensive starting point. These templates serve as a foundation and can be adapted to meet your project's specific needs.
+Using a language-specific `.gitignore` template provides a comprehensive starting point. These templates serve as a foundation and can be adapted to meet your project's specific needs. You will be able to select your `.gitignore` template when you [create your repository](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md#-creating-a-new-repository). You may access GitHub's collection of `.gitignore` templates [here](https://github.com/github/gitignore).
 
 ### 2. GitHub Push Protections
 
@@ -132,7 +132,9 @@ In addition to GitHub’s push protection, we use pre-commit hooks as a local gu
 
 **Act immediately**
 1. Stop further pushes and notify the repository maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov)
-2. Rotate or revoke the exposed credential or token immediately
+2. Revoke & remove the exposed credential or token
+   - Revoke the exposed credential or token immediately by deleting it off of GitHub (and the system that issued it if it's a token)
+   - Then rotate your token by generating a new one
 3. Remove the secret from the working tree
 4. If the secret was pushed, work with maintainers to remove it from git history using an approved history rewrite approach
 5. Confirm the new secret is stored securely and that prevention controls are in place before continuing work
