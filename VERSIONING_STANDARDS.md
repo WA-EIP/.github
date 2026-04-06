@@ -121,6 +121,7 @@ The table below lists naming conventions you may use for your branches based off
 <summary>
 <b>1. Start New Feature Development </b>
 </summary> <br />
+
 Creating a new feature branch from your `main` branch allows you to develop new features or fix bugs by copying the environment of the `main` branch without affecting its ongoing work. Once you start a new branch, work on your feature and commit your changes using conventional commits.
 
 ```bash
@@ -141,6 +142,7 @@ git push origin feature/your-feature-name
 <summary>
 <b>2. Create a release branch</b>
 </summary> <br />
+
 The below shows how to create a release branch by copying the environment of `main` and publishing the release branch for you and your team to work off of.
 
 ```bash
@@ -210,7 +212,7 @@ Create another pull request to merge your release branch into `main` for product
 <b>6. Final Release Process</b>
 </summary> <br />
 
-When release pull request is approved and merged to main, the workflow automatically:
+When release pull request is approved and merged to `main`, the workflow automatically:
   - Creates a version tag (e.g., v0.1.0)
   - Generates GitHub Release with release notes
   - Closes the release cycle
