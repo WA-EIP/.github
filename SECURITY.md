@@ -49,7 +49,7 @@ There are three visibility types when you create a new repository:
 2. **Internal**: WA DOH enterprise members can see this repository. You choose who can commit.
 3. **Private**: You choose who can see and commit to this repository.
 
-To ensure the security of your contributions to the WA-EIP GitHub, please select either **Internal** or **Private** visibility. Keeping your repository off the Public setting prevents accidental data exposure to the general public.
+To ensure the security of your contributions to the WA-EIP GitHub, please select either **Internal** or **Private** visibility. If you aren’t ready to share something internally or publicly or don’t want other users to alter the code, you may make the repo **Private**. Keeping your repository off the **Public** setting prevents accidental data exposure to the general public.
 
 
 > [!CAUTION]
@@ -98,7 +98,9 @@ The example `.gitignore` file above contains all files with an excel, log, or tx
 
 **`.gitignore` Templates**
 
-Using a language-specific `.gitignore` template provides a comprehensive starting point. These templates serve as a foundation and can be adapted to meet your project's specific needs. You will be able to select your `.gitignore` template when you [create your repository](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md#-creating-a-new-repository). You may access GitHub's collection of `.gitignore` templates [here](https://github.com/github/gitignore).
+Using a language-specific `.gitignore` template provides a comprehensive starting point for your `.gitignore` file. These templates can be adjusted to meet your project's specific needs by adding names of files or extensions that you want to exclude from uploading into your repository. 
+
+You will be able to select your `.gitignore` template when you [create your repository](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md#-creating-a-new-repository). You may access GitHub's collection of `.gitignore` templates [here](https://github.com/github/gitignore).
 
 ### 2. GitHub Push Protections
 
@@ -149,6 +151,10 @@ Please do not report security issues through public GitHub issues, discussions, 
 * Include a clear description of the issue, affected repository paths, steps to reproduce (if applicable), and potential impact
 
 [↑ Back to Top](#-table-of-contents)
+
+
+[🏠 Return to Home](/)
+
 
 ## References
 
