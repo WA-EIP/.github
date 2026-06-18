@@ -134,6 +134,8 @@ Preferred reporting method:
 
 [↑ Back to Top](#-table-of-contents)
 
+[🏠 Return to Home](https://github.com/WA-EIP)
+
 ## References
 
 Standards
