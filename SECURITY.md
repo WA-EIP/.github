@@ -110,7 +110,8 @@ What pre-commit hooks are for:
 * It allows us to define custom secrets and sensitive patterns for our needs
 
 How to install:
-* Follow the installation and update instructions [here](https://github.com/WA-EIP/hooks) to install pre-commit hooks for all of your repos.
+* Follow the installation and update instructions [here](https://github.com/WA-EIP/hooks) to install pre-commit hooks for all of your repos
+* If you have trouble using Git commands or installing pre-commit hooks,  you may need to reach out to your IT team to bypass admin rights issues
 * Contact maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov) for additional support
 
 
