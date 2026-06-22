@@ -9,24 +9,7 @@
 
 This organization provides a shared space to store RESP-NET-related code and processes, while fostering transparency, modernization, and cross-team collaboration.
 
-#### Please review our [Code of Conduct](https://github.com/WA-EIP/.github/blob/main/CODE_OF_CONDUCT.md), [Contributing Guide](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md), and [Security Policy](https://github.com/WA-EIP/.github/blob/main/SECURITY.md) for details on how to contribute to a project. Please follow naming conventions and security policies prior to creating a new repository. We have also created [Versioning Standards](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md) with more information about release cycles and suggested conventions for branching strategies and commit messages to help keep our work consistent and easy to review.
-
-#### ✅ Best Practices Checklist (🚧 UNDER CONSTRUCTION 🚧)
-Before publishing or contributing to a repository, please ensure of the following:
-- [ ] Install [pre-commit hooks](https://github.com/WA-EIP/hooks)
--  [ ] Contributions follow the org’s [Code of Conduct](CODE_OF_CONDUCT.md)
-- [ ] Code follows [Security Policy](SECURITY.md) and is sanitized of sensitive information
--  [ ] When creating a new repository...
-    - [ ] Follow [naming convention](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md#-creating-a-new-repository)
-    - [ ] Add a detailed description of your repository
-    - [ ] Choose visibility: Internal or Private [link]
-    - [ ] Turn on <b>Add README</b> to add `README.md`
-    - [ ] <b>Add .gitignore</b> by choosing the `R template`
-    - [ ] <b>Add license</b> by selecting `⚖️ MIT License`
-    - [ ] Initiate [Release Cycle workflow](https://github.com/WA-EIP/.github/blob/main/VERSIONING_STANDARDS.md#-release-cycle-process)
-- [ ] Documentation is updated
-- [ ] Code/commits follow [Commit Guidelines](https://github.com/WA-EIP/.github/blob/md-files/VERSIONING_STANDARDS.md#-commit-guidelines)
-
+#### Please reach out to us at RESP-NET@doh.wa.gov if you would like to collaborate in our GitHub organization.
 <!--
 
 👩‍💻 Check out our website! https://nwpage.org/

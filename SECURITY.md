@@ -4,7 +4,7 @@ This document defines the security expectations for using the Washington State -
 
 <b>It covers:</b>
 * What information should not be committed or shared in GitHub (including in issues and pull requests)
-* Required and recommended repository guardrails such as `.gitignore`, GitHub Secret Scanning and Push Protection, and local pre-commit hooks
+* Required repository guardrails such as `.gitignore`, GitHub Secret Scanning and Push Protection, and local pre-commit hooks
 * What to do if sensitive information is accidentally committed or pushed
 * How to report a suspected vulnerability
 
@@ -21,9 +21,9 @@ This document defines the security expectations for using the Washington State -
 ## 📋 Table of Contents
 - [Protect Sensitive Information](#protect-sensitive-information)
 - [Security Guardrails](#security-guardrails)
-   - [`.gitignore`](#gitignore)
-   - [GitHub Push Protections](#github-push-protections)
-   - [Pre-Commit Hooks](#pre-commit-hooks)
+   - [`.gitignore`](#1-gitignore)  
+   - [GitHub Push Protections](#2-github-push-protections)
+   - [Pre-Commit Hooks](#3-pre-commit-hooks)
 - [If you accidentally commit or push sensitive information](#if-you-accidentally-commit-or-push-sensitive-information)
 - [Reporting a vulnerability](#reporting-a-vulnerability)
 - [References](#references)
@@ -34,12 +34,23 @@ This document defines the security expectations for using the Washington State -
 
 ## Protect Sensitive Information
 
-**Objectives**
+### Objectives
 * Prevent sensitive information leaks to GitHub
 * Set up guardrails such as `.gitignore`, GitHub protections, and local hooks
 * Scrub private repositories before making them public
 
-If sensitive information is leaked and committed to a remote repository, it can remain in git history and may require significant effort to remove.
+> [!IMPORTANT] 
+> If sensitive information is leaked and committed to a remote repository, it can remain in git history and may require significant effort to remove.
+
+### Repository Visibility
+
+There are three visibility types when you create a new repository:
+1. **Public**: Anyone on the internet can see this repository. You choose who can commit.
+2. **Internal**: WA DOH enterprise members can see this repository. You choose who can commit.
+3. **Private**: You choose who can see and commit to this repository.
+
+To ensure the security of your contributions to the WA-EIP GitHub, please select either **Internal** or **Private** visibility. If you aren’t ready to share something internally or publicly or don’t want other users to alter the code, you may make the repo **Private**. Keeping your repository off the **Public** setting prevents accidental data exposure to the general public.
+
 
 > [!CAUTION]
 > If data is not already public, it likely should not be made public through a pull request or a commit.
@@ -60,11 +71,11 @@ We use layered controls to reduce the risk of accidentally exposing sensitive in
 
 
 
-### `.gitignore`
+### 1. `.gitignore`
 
 `.gitignore` helps prevent accidental commits of local files that may contain sensitive information. It is bad practice and a security risk to add private credentials to a script. If your script contains things like passwords, server names, or network drives, be aware that that information may be publicly visible when you push it to a remote git/github repo. Many of our scripts must call passwords and server names in order for them to work properly, so we need a way to hide that information from the public but still be able to run the scripts locally. `.gitignore` can help achieve this.
 
-**Example `.gitignore` patterns**
+**Example `.gitignore` Patterns**
 ```
 # Excel files  
 *.xlsx  
@@ -79,32 +90,37 @@ We use layered controls to reduce the risk of accidentally exposing sensitive in
 
 The example `.gitignore` file above contains all files with an excel, log, or txt extension. This means that any file with those extensions that you create in your local clone of the repo will exist for you, but those filetypes cannot and will not ever be pushed into the repo from your local clone.
 
-Contributor expectations:
+<b>Contributor Expectations:</b>
 * Never hardcode credentials in scripts
 * Store secrets in local configuration files (for example `.env`, `.json`, `.txt`, `rcreds`) that are excluded by `.gitignore`, or use environment variables
 * If you include a configuration template in the repository, it must contain placeholders only and no real secrets
 * Do not add sensitive files to the repo and rely on `.gitignore` later. If a secret is committed once, it may persist in git history even after removal
 
+**`.gitignore` Templates**
 
-### GitHub Push Protections
+Using a language-specific `.gitignore` template provides a comprehensive starting point for your `.gitignore` file. These templates can be adjusted to meet your project's specific needs by adding names of files or extensions that you want to exclude from uploading into your repository. 
+
+You will be able to select your `.gitignore` template when you [create your repository](https://github.com/WA-EIP/.github/blob/main/CONTRIBUTING.md#-creating-a-new-repository). You may access GitHub's collection of `.gitignore` templates [here](https://github.com/github/gitignore).
+
+### 2. GitHub Push Protections
 
 We have enabled GitHub Secret Scanning and Push Protection for every repository in the WA-EIP GitHub org.
 
-What this does:
+**What this does:**
 * Secret scanning helps detect secrets that were committed
 * Push protection scans code pushes and blocks pushes containing supported secret types, and it can generate an alert when a contributor bypasses the block
 
-Contributor expectations:
+**Contributor expectations:**
 * If your push is blocked, assume a real exposure risk until proven otherwise
 * Remove the secret from the change, rotate or revoke it if it was real, then push again
 * If you are unsure whether the flagged content is a secret, pause and contact the maintainers before bypassing the block
 
 
-### Pre-Commit Hooks
+### 3. Pre-Commit Hooks
 
 In addition to GitHub’s push protection, we use pre-commit hooks as a local guardrail to reduce the chance of committing sensitive information in the first place. For example, if someone accidentally pushes a server name to the public repo, the hook will prevent that code from ever getting into the remote repo and will give the user a local error.
 
-What pre-commit hooks are for:
+**What pre-commit hooks are for:**
 * They run locally during git actions (for example, at commit time)
 * They are intended to catch credentials and sensitive patterns before they ever reach GitHub
 * It allows us to define custom secrets and sensitive patterns for our needs
@@ -117,9 +133,11 @@ How to install:
 
 ## If you accidentally commit or push sensitive information
 
-Act immediately
+**Act immediately**
 1. Stop further pushes and notify the repository maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov)
-2. Rotate or revoke the exposed credential or token immediately
+2. Revoke & remove the exposed credential or token
+   - Revoke the exposed credential or token immediately by deleting it off of GitHub (and the system that issued it if it's a token)
+   - Then rotate your token by generating a new one
 3. Remove the secret from the working tree
 4. If the secret was pushed, work with maintainers to remove it from git history using an approved history rewrite approach
 5. Confirm the new secret is stored securely and that prevention controls are in place before continuing work
@@ -129,13 +147,14 @@ Act immediately
 
 Please do not report security issues through public GitHub issues, discussions, or pull requests.
 
-Preferred reporting method:
+**Preferred reporting method:**
 * Contact the repository maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov)
 * Include a clear description of the issue, affected repository paths, steps to reproduce (if applicable), and potential impact
 
 [↑ Back to Top](#-table-of-contents)
 
 [🏠 Return to Home](https://github.com/WA-EIP)
+
 
 ## References
 

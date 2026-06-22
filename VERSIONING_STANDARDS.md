@@ -2,23 +2,23 @@
 
 # ⚖️ Versioning Standards
 
-This section will outline standards for documenting your repository to enhance collaboration, provide clarity and ease adaptation across teams. Please follow the [Release Cycle Process](#-release-cycle-process), [Branch Strategy](#-branch-strategy), and [Commit Guidelines](#-commit-guidelines) to organize and manage contents in your repo.
+This section will outline standards for documenting your repository to enhance collaboration, provide clarity and ease adaptation across teams. Please follow the [Release Cycle Process](#-release-cycle-process), [Commit Guidelines](#-commit-guidelines), and [Branch Strategy](#-branch-strategy) to organize and manage contents in your repo.
 
 
 ---
 
 ## 📋 Table of Contents
 - [Release Cycle Process](#-release-cycle-process)
-- [Branch Strategy](#-branch-strategy)
 - [Commit Guidelines](#-commit-guidelines)
+- [Branch Strategy](#-branch-strategy)
 - [Step by Step Process](#️-step-by-step-process)
-- [Version Numbering](#-version-numbering)
 - [Important Notes](#-important-notes)
 
 ---
 
 ## 🔁 Release Cycle Process
-This repository uses an automated release workflow that manages versioning and releases through GitHub Actions. The process follows a structured branching strategy and automated releases through pull requests. If you would like to read more information about release cycles, please [click here].
+Repositories in this org should use an automated release workflow that manages versioning and releases through GitHub Actions. Automated releases are triggered through [commit messages](#-commit-guidelines). 
+If you would like to read more information about release cycles, please [click here].
 
 <details>
 <summary>
@@ -34,10 +34,10 @@ This repository uses an automated release workflow that manages versioning and r
 3. The YAML file will appear. Click `Commit Changes...` on the upper right hand corner. <br>
 <img src ="images/first-commit.jpg" alt="screenshot of first commit" width="1500" height="">
 
-4. A pop of confirming your commit will appear. You may select the option, `Commit directly to the main branch`. Then click `Commit changes`.<br>
+4. A pop of confirming your commit will appear. You may select the option, **Commit directly to the `main` branch**. Then click `Commit changes`.<br>
 <img src ="images/second-commit.jpg" alt="screenshot of second commit" width="500" height="">
 
-5. Your repo will now have Releases 👏
+5. Your `main` branch in the repo will now have Releases 👏
 </details>
 <br>
 
@@ -46,8 +46,61 @@ This repository uses an automated release workflow that manages versioning and r
 
 ---
 
+## 🔒 Commit Guidelines
+
+Conventional commit formatting allows the release workflow to update your repository's Release Cycle automatically. All commits should follow the formats listed below. 
+
+ **Only the following commit types will trigger an automated GitHub release. Follow semantic versioning (MAJOR.MINOR.PATCH):**
+
+| Commit Type | Version Change | When to Use |
+|---|---|---|
+| `fix:` | PATCH `(0.0.1)` | Squashing a bug in the codebase |
+| `feat:` | MINOR `(0.1.0)` | Introducing a new feature |
+| `feat:` (with `BREAKING CHANGE:` footer) | MAJOR `(1.0.0)` | Introducing a breaking change |
+
+### Examples
+> ```bash
+> fix: update date formatting
+> ```
+
+> ```bash
+> feat: send email to team when code successfully runs or errors out
+> ```
+
+> ```bash
+> feat: add new script for LHJ X
+>
+> BREAKING CHANGE: LHJ X is now included in pipeline
+> ```
+
+<br>
+
+**The following commit types are informational only and will not trigger a release:**
+| Commit Type | When to Use |
+|---|---|
+🧹 `chore:` | Use for updates that don't affect functionality: updates to dependencies or cleanup
+📚 `docs:` | Documentation changes only (updating README or other docs)
+🎨 `style:` | Code style changes (formatting, indentation, spacing, etc.) without changing logic
+🧼 `refactor:` | Code refactoring (renaming variables, objects, splitting functions) without changing logic
+⚡ `perf:` | Code that improves performance without changing logic
+🧪 `test:` | Test updates
+🛠️ `build:` | Build system changes
+🔁 `ci:` | CI configuration changes (GitHub actions, etc.)
+⏪ `revert:` | Reverting/undoing commits or previous changes
+<br>
+
+> Example:
+> ```bash
+> git commit -m "feat: add data validation"
+> git commit -m "fix: correct calculation bug"
+> git commit -m "chore: update dependencies"
+> ```
+
+
+---
+
 ## 🌳 Branch Strategy
-The table below lists naming conventions you may use for your branches based off your main branch. Utilizing a branch strategy can help identify what work is being done in the branch.
+The table below lists naming conventions you may use for your branches based off your `main` branch. Utilizing a branch strategy can help identify what work is being done in the branch.
 
 | Branch         | Purpose                                      |
 |----------------|----------------------------------------------|
@@ -62,38 +115,14 @@ The table below lists naming conventions you may use for your branches based off
 
 ---
 
-## 🔒 Commit Guidelines
-
-All commits must follow the conventional commits format listed below. Conventional commit formatting allows the automated release workflow to update the Release Cycle. 
-
-- ✅ `feat:` - Use when adding a new feature.
-- 🐞 `fix:` - Use when fixing a bug.
-- 🧹 `chore:` - Use for updates that don't affect functionality: updates to dependencies or cleanup.
-- 📚 `docs:` - Documentation changes only (updating README or other docs).
-- 🎨 `style:` - Code style changes (formatting, indentation, spacing, etc.) without changing logic.
-- 🧼 `refactor:` - Code refactoring (renaming variables, objects, splitting functions) without changing logic.
-- ⚡ `perf:` - Code that improves performance without changing logic.
-- 🧪 `test:` - Test updates
-- 🛠️ `build:` - Build system changes
-- 🔁 `ci:` - CI configuration changes (GitHub actions, etc.)
-- ⏪ `revert:` - Reverting/undoing commits or previous changes
-
-
-Example:
-```bash
-git commit -m "feat: add data validation"
-git commit -m "fix: correct calculation bug"
-git commit -m "chore: update dependencies"
-```
-
----
-
 ## ✏️ Step by Step Process
- Instructions listed below demonstrate standard workflow for these tasks. There are multiple ways to achieve these results depending on your environment and preferences (command line interface, GitHub desktop, RStudio's Git Interface, etc.).
+ Instructions listed below demonstrate recommended, standard workflow for these tasks. There are multiple ways to achieve these results depending on your environment and preferences (command line interface, GitHub desktop, RStudio's Git Interface, etc.).
 <details>
 <summary>
 <b>1. Start New Feature Development </b>
 </summary> <br />
+
+Creating a new feature branch from your `main` branch allows you to develop new features or fix bugs by copying the environment of the `main` branch without affecting its ongoing work. Once you start a new branch, work on your feature and commit your changes using conventional commits.
 
 ```bash
 # Create new feature branch from main
@@ -114,6 +143,8 @@ git push origin feature/your-feature-name
 <b>2. Create a release branch</b>
 </summary> <br />
 
+The below shows how to create a release branch by copying the environment of `main` and publishing the release branch for you and your team to work off of.
+
 ```bash
 # Create release branch from main for the release cycle
 git checkout main
@@ -128,6 +159,8 @@ git push origin release/0.1.0
 <summary>
 <b>3. Create Feature Pull Request</b>
 </summary> <br />
+
+Create a pull request when your feature is complete, tested and ready for review.
 
 1. Go to GitHub repository
 2. Click "Pull requests"
@@ -147,9 +180,11 @@ git push origin release/0.1.0
 <b>4. Merge Features to Release Branch</b>
 </summary> <br />
 
-- Review and approve feature pull request
-- Merge approved features into release branch
-- Continue until release is ready
+Merging features to a release branch will allow for any bug fixes and any other finalizations before the code merges into `main` and reaches production.
+
+1. Review and approve feature pull request
+2. Merge approved features into release branch
+3. Continue until release is ready
 
 </details>
 
@@ -158,8 +193,10 @@ git push origin release/0.1.0
 <b>5. Create Release Pull Request</b>
 </summary> <br />
 
+Create another pull request to merge your release branch into `main` for production.
+
 1. Once release branch contains all intended features:
-2. Create PR from release branch to main
+2. Create PR from release branch to `main`
 3. Title must follow commit convention (e.g., "release: v0.1.0")
 4. Description should include:
     - Summary of changes
@@ -175,22 +212,12 @@ git push origin release/0.1.0
 <b>6. Final Release Process</b>
 </summary> <br />
 
-When release pull request is approved and merged to main, the workflow automatically:
+When release pull request is approved and merged to `main`, the workflow automatically:
   - Creates a version tag (e.g., v0.1.0)
   - Generates GitHub Release with release notes
   - Closes the release cycle
   
 </details>
-
-
----
-
-## 🔢 Version Numbering
-
-Follow semantic versioning (MAJOR.MINOR.PATCH):
-  - MAJOR (1.0.0) - Breaking changes
-  - MINOR (0.1.0) - New features (backwards compatible)
-  - PATCH (0.0.1) - Bug fixes
   
 
 ---
@@ -200,7 +227,7 @@ Follow semantic versioning (MAJOR.MINOR.PATCH):
 - All changes must go through pull requests
 - Pull requests will be approved by those who created the repository and will not need WA DOH approval
 - Pull request titles must follow conventional commit format
-- Release pull requests require approval before merging to main
+- Release pull requests require approval before merging to `main`
 - Tests must pass before merges are allowed
 - Each release should have clear documentation of changes
 
