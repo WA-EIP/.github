@@ -225,9 +225,12 @@ When release pull request is approved and merged to `main`, the workflow automat
 ## ✨ Important Notes
 
 - All changes must go through pull requests
+- Pull requests will be approved by those who created the repository and will not need WA DOH approval
 - Pull request titles must follow conventional commit format
 - Release pull requests require approval before merging to `main`
 - Tests must pass before merges are allowed
 - Each release should have clear documentation of changes
 
 [↑ Back to Top](#-table-of-contents)
+
+[🏠 Return to Home](https://github.com/WA-EIP)

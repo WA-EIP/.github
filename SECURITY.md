@@ -125,8 +125,9 @@ In addition to GitHub’s push protection, we use pre-commit hooks as a local gu
 * They are intended to catch credentials and sensitive patterns before they ever reach GitHub
 * It allows us to define custom secrets and sensitive patterns for our needs
 
-**How to install:**
-* Follow the installation and update instructions [here](https://github.com/WA-EIP/hooks) to install pre-commit hooks for all of your repos.
+How to install:
+* Follow the installation and update instructions [here](https://github.com/WA-EIP/hooks) to install pre-commit hooks for all of your repos
+* If you have trouble using Git commands or installing pre-commit hooks,  you may need to reach out to your IT team to bypass admin rights issues
 * Contact maintainers at [respnet@doh.wa.gov](mailto:respnet@doh.wa.gov) for additional support
 
 
@@ -151,7 +152,6 @@ Please do not report security issues through public GitHub issues, discussions, 
 * Include a clear description of the issue, affected repository paths, steps to reproduce (if applicable), and potential impact
 
 [↑ Back to Top](#-table-of-contents)
-
 
 [🏠 Return to Home](https://github.com/WA-EIP)
 

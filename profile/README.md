@@ -5,7 +5,9 @@
 <br>
 <br>
 
-### This is the GitHub organization for the Washington State Emerging Infections Program.
+### Welcome to the GitHub organization for the Washington State Emerging Infections Program.
+
+This organization provides a shared space to store RESP-NET-related code and processes, while fostering transparency, modernization, and cross-team collaboration.
 
 #### Please reach out to us at RESP-NET@doh.wa.gov if you would like to collaborate in our GitHub organization.
 <!--
